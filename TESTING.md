@@ -117,6 +117,7 @@ python test_e2e.py --limit 2 --delay 0.3
 ```
 
 **What it checks:**
+
 - All scripts execute without errors
 - Output files are created
 - Data flows correctly between stages
@@ -130,6 +131,7 @@ python test_e2e.py --limit 5 --delay 0.5
 ```
 
 **What it checks:**
+
 - Author name matching works correctly
 - Audiobook search returns valid results
 - Availability checking handles various states
@@ -144,6 +146,7 @@ python test_e2e.py --limit 20 --delay 1.0
 ```
 
 **What it checks:**
+
 - Full pipeline handles substantial data
 - Rate limiting works correctly
 - No memory issues with larger datasets
@@ -201,12 +204,14 @@ When making changes to the codebase, use this workflow:
 Test runs create/overwrite these files in the `data/` directory:
 
 ### BBC Test Files
+
 - `bbc_world_book_club_episodes.json` - Limited episodes
 - `bbc_audiobook_search_results.json` - Search results for limited authors
 - `bbc_audiobook_search_results_refined.json` - Filtered results
 - `bbc_available_audiobooks.json` - Available books
 
 ### Hugo Test Files
+
 - `hugo_award_nominees.json` - Limited nominations
 - `hugo_award_authors.json` - Extracted unique authors
 - `hugo_audiobook_search_results.json` - Search results for limited authors
@@ -284,10 +289,10 @@ Potential improvements to the testing framework:
 
 The testing framework provides:
 
-✅ **Fast validation** - Test complete workflow in minutes  
-✅ **Configurable limits** - Control data volume for each test  
-✅ **Flexible testing** - Test individual scripts or complete workflow  
-✅ **Clear feedback** - Visual confirmation of test results  
-✅ **Development friendly** - Iterate quickly during development  
+✅ **Fast validation** - Test complete workflow in minutes
+✅ **Configurable limits** - Control data volume for each test
+✅ **Flexible testing** - Test individual scripts or complete workflow
+✅ **Clear feedback** - Visual confirmation of test results
+✅ **Development friendly** - Iterate quickly during development
 
 Use `python test_e2e.py --help` for complete usage information.

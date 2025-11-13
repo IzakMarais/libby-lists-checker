@@ -15,19 +15,19 @@ import os
 def run_test(source, limit, delay=0.5):
     """
     Run an end-to-end test for a specific source.
-    
+
     Args:
         source: 'bbc' or 'hugo'
         limit: Number of items to process
         delay: Delay between requests
-    
+
     Returns:
         Boolean indicating success
     """
     print("\n" + "=" * 70)
     print(f"TESTING {source.upper()} WORKFLOW (LIMIT: {limit})")
     print("=" * 70)
-    
+
     # Run the workflow with limit
     cmd = [
         sys.executable, 'workflow.py',
@@ -35,20 +35,20 @@ def run_test(source, limit, delay=0.5):
         '--limit', str(limit),
         '--delay', str(delay)
     ]
-    
+
     print(f"\nRunning: {' '.join(cmd)}\n")
-    
+
     result = subprocess.run(cmd)
-    
+
     if result.returncode != 0:
         print(f"\n❌ {source.upper()} test FAILED")
         return False
-    
+
     print(f"\n✅ {source.upper()} test PASSED")
-    
+
     # Print output file locations
     print("\nGenerated files:")
-    
+
     if source == 'bbc':
         files = [
             'data/bbc_world_book_club_episodes.json',
@@ -64,14 +64,14 @@ def run_test(source, limit, delay=0.5):
             'data/hugo_audiobook_search_results_refined.json',
             'data/hugo_available_audiobooks.json'
         ]
-    
+
     for file_path in files:
         if os.path.exists(file_path):
             size = os.path.getsize(file_path)
             print(f"  ✓ {file_path} ({size} bytes)")
         else:
             print(f"  ✗ {file_path} (missing)")
-    
+
     return True
 
 
@@ -94,30 +94,30 @@ Examples:
   python test_e2e.py --source hugo --limit 3 --delay 0.3
         """
     )
-    
+
     parser.add_argument(
         '--source',
         choices=['bbc', 'hugo', 'both'],
         default='both',
         help='Source to test (default: both)'
     )
-    
+
     parser.add_argument(
         '--limit',
         type=int,
         default=3,
         help='Number of items to process in each stage (default: 3)'
     )
-    
+
     parser.add_argument(
         '--delay',
         type=float,
         default=0.5,
         help='Delay between requests in seconds (default: 0.5)'
     )
-    
+
     args = parser.parse_args()
-    
+
     print("=" * 70)
     print("LIBRARY AUDIOBOOK FINDER - END-TO-END TESTS")
     print("=" * 70)
@@ -126,17 +126,17 @@ Examples:
     print(f"  Limit per stage: {args.limit}")
     print(f"  Request delay: {args.delay}s")
     print("=" * 70)
-    
+
     success = True
-    
+
     if args.source in ['bbc', 'both']:
         if not run_test('bbc', args.limit, args.delay):
             success = False
-    
+
     if args.source in ['hugo', 'both']:
         if not run_test('hugo', args.limit, args.delay):
             success = False
-    
+
     # Final summary
     print("\n" + "=" * 70)
     if success:
@@ -144,7 +144,7 @@ Examples:
     else:
         print("❌ SOME TESTS FAILED")
     print("=" * 70)
-    
+
     return 0 if success else 1
 
 

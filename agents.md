@@ -47,11 +47,15 @@ Scrapes the BBC World Book Club website to extract:
 - Episode metadata (ID, author, book title, date, duration)
 - Direct episode URLs
 - Processes all pages of the podcast archive
+- Parses episode titles to extract author and book title fields
+- Generates a separate authors list for searching
 
 **Output:**
 
 - `data/bbc_world_book_club_episodes.json`
 - `data/bbc_world_book_club_episodes.csv`
+- `data/bbc_world_book_club_authors.json`
+- `data/bbc_world_book_club_authors.csv`
 
 **Script:** `scrape_hugo_awards.py` (Hugo - NEW)
 
@@ -251,12 +255,25 @@ Available Audiobooks JSON (ready to borrow)
 ```json
 {
   "id": "w3cswsss",
+  "url": "https://www.bbc.com/audio/play/w3cswsss",
+  "original_title": "Ngũgĩ wa Thiong'o - A Grain of Wheat",
   "author": "Ngũgĩ wa Thiong'o",
   "book_title": "A Grain of Wheat",
   "date": "9 Mar 2019",
   "duration": "48 mins",
-  "url": "https://www.bbc.com/audio/play/w3cswsss"
+  "page": 0
 }
+```
+
+### BBC Author List
+
+```json
+[
+  "Agatha Christie",
+  "Ngũgĩ wa Thiong'o",
+  "Oyinkan Braithwaite",
+  ...
+]
 ```
 
 ### Hugo Award Entry
@@ -401,7 +418,7 @@ libby-world-book-club/
 ├── workflow.py                 # Complete automated workflow
 ├── test_e2e.py                 # NEW: End-to-end testing
 ├── scrape_hugo_awards.py       # Stage 1 Hugo scraper (with --limit)
-├── scrape_episodes.py          # Stage 1: BBC scraper (with --limit)
+├── scrape_episodes.py          # Stage 1: BBC scraper (with --limit, includes author extraction)
 ├── search_combined.py          # Stage 2 multi-source search (with --limit)
 ├── search_audiobooks.py        # Library: Core search function
 ├── refine_audiobooks.py        # Stage 3: Result filtering (with --limit)
@@ -419,8 +436,10 @@ libby-world-book-club/
     ├── hugo_award_authors.json             # Unique authors
     ├── hugo_award_authors.csv
     ├── hugo_audiobook_search_results.json  # Hugo search
-    ├── bbc_world_book_club_episodes.json
+    ├── bbc_world_book_club_episodes.json   # BBC episodes with parsed authors
     ├── bbc_world_book_club_episodes.csv
+    ├── bbc_world_book_club_authors.json    # BBC unique authors
+    ├── bbc_world_book_club_authors.csv
     ├── bbc_audiobook_search_results.json   # BBC search (via search_combined.py)
     ├── audiobook_search_results_refined.json
     ├── audiobook_search_results_refined.csv

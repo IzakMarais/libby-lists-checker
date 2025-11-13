@@ -315,16 +315,16 @@ def main():
     parser = argparse.ArgumentParser(
         description='Scrape Hugo Award for Best Novel data from Wikipedia'
     )
-    
+
     parser.add_argument(
         '--limit',
         type=int,
         default=None,
         help='Limit number of entries to save (default: save all)'
     )
-    
+
     args = parser.parse_args()
-    
+
     print("Starting to scrape Hugo Award for Best Novel data...")
     print("=" * 60)
 
@@ -337,7 +337,7 @@ def main():
 
     # Deduplicate entries
     entries = deduplicate_entries(entries)
-    
+
     # Apply limit if specified
     if args.limit:
         entries = entries[:args.limit]

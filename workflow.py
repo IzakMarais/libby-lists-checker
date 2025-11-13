@@ -165,6 +165,7 @@ Examples:
 
     if args.source in ['bbc', 'both']:
         print(f"  BBC Episodes: data/bbc_world_book_club_episodes.json")
+        print(f"  BBC Authors: data/bbc_world_book_club_authors.json")
 
     if args.source in ['hugo', 'both']:
         print(f"  Hugo Nominees: data/hugo_award_nominees.json")

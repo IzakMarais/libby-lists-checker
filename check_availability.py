@@ -101,12 +101,12 @@ def check_all_books(books_data: Dict, delay: float = 0.5, limit: int = None) -> 
     """
     available_books = []
     total_books = sum(author_data['count'] for author_data in books_data.values())
-    
+
     if limit:
         print(f"Checking availability for up to {limit} books (limited from {total_books})...\n")
     else:
         print(f"Checking availability for {total_books} books...\n")
-    
+
     processed = 0
     checked = 0
 
@@ -117,7 +117,7 @@ def check_all_books(books_data: Dict, delay: float = 0.5, limit: int = None) -> 
         for book in author_data['books']:
             if limit and checked >= limit:
                 break
-            
+
             processed += 1
             checked += 1
             book_id = book['id']
@@ -144,7 +144,7 @@ def check_all_books(books_data: Dict, delay: float = 0.5, limit: int = None) -> 
 
             # Be respectful to the server
             time.sleep(delay)
-        
+
         if limit and checked >= limit:
             break
 

@@ -9,6 +9,63 @@ import csv
 from datetime import datetime
 import time
 import argparse
+import re
+
+
+def parse_title(title):
+    """
+    Extract author and book title from the episode title.
+
+    Args:
+        title: Episode title string
+
+    Returns:
+        Tuple of (author, book_title)
+    """
+
+    # Handle special cases
+    if title == "Unknown":
+        return None, None
+
+    # Special case: "Crime and Punishment: Fyodor Dostoyevsky"
+    if "Crime and Punishment: Fyodor Dostoyevsky" in title:
+        return "Fyodor Dostoyevsky", "Crime and Punishment"
+
+    # Special case: "Crime and Punishment" alone
+    if title == "Crime and Punishment":
+        return "Fyodor Dostoyevsky", "Crime and Punishment"
+
+    # Special case: "World Book Café" or "World Book Cafe"
+    if "World Book Caf" in title:
+        # Extract city name
+        match = re.search(r'World Book Caf[ée]:\s*(.+)', title)
+        if match:
+            return None, f"World Book Café: {match.group(1)}"
+        return None, title
+
+    # Special cases: Only author name (no book title)
+    author_only_cases = [
+        "Graeme Macrae Burnet", "N.K Jemisin", "Elif Batuman",
+        "Wole Soyinka", "Agatha Christie"
+    ]
+    if title in author_only_cases:
+        return title, None
+
+    # Special case: City names (like "Madrid")
+    if title in ["Madrid", "Oslo"]:
+        return None, f"World Book Café: {title}"
+
+    # Pattern 1: "Author - Book" or "Author: Book"
+    if ' - ' in title:
+        parts = title.split(' - ', 1)
+        return parts[0].strip(), parts[1].strip()
+
+    if ': ' in title and not title.startswith('World Book'):
+        parts = title.split(': ', 1)
+        return parts[0].strip(), parts[1].strip()
+
+    # If no separator found, assume it's just author name
+    return title, None
 
 def scrape_page(page_num):
     """
@@ -60,6 +117,9 @@ def scrape_page(page_num):
             title_elem = card.find('span', class_='sc-4d4e1117-7')
             title = title_elem.get_text(strip=True) if title_elem else 'Unknown'
 
+            # Parse title to extract author and book title
+            author, book_title = parse_title(title)
+
             # Extract date and duration from the div with class sc-4d4e1117-11
             date_duration_div = card.find('div', class_='sc-4d4e1117-11')
             date_text = 'Unknown'
@@ -78,7 +138,9 @@ def scrape_page(page_num):
             episode = {
                 'id': episode_id,
                 'url': episode_url,
-                'title': title,
+                'original_title': title,
+                'author': author,
+                'book_title': book_title,
                 'date': date_text,
                 'duration': duration_text,
                 'page': page_num
@@ -132,7 +194,7 @@ def save_to_csv(episodes, filename='data/bbc_world_book_club_episodes.csv'):
         return
 
     with open(filename, 'w', newline='', encoding='utf-8') as f:
-        writer = csv.DictWriter(f, fieldnames=['id', 'title', 'date', 'duration', 'url', 'page'])
+        writer = csv.DictWriter(f, fieldnames=['id', 'author', 'book_title', 'original_title', 'date', 'duration', 'url', 'page'])
         writer.writeheader()
         writer.writerows(episodes)
     print(f"Saved {len(episodes)} episodes to {filename}")
@@ -142,29 +204,29 @@ def main():
     parser = argparse.ArgumentParser(
         description='Scrape BBC World Book Club episodes'
     )
-    
+
     parser.add_argument(
         '--limit',
         type=int,
         default=None,
         help='Limit number of episodes to scrape (default: scrape all)'
     )
-    
+
     parser.add_argument(
         '--pages',
         type=int,
         default=13,
         help='Number of pages to scrape (default: 13, i.e., pages 0-13)'
     )
-    
+
     args = parser.parse_args()
-    
+
     print("Starting to scrape BBC World Book Club episodes...")
     print("=" * 60)
 
     # Scrape all pages (0 to end_page)
     episodes = scrape_all_episodes(0, args.pages)
-    
+
     # Apply limit if specified
     if args.limit:
         episodes = episodes[:args.limit]
@@ -180,10 +242,33 @@ def main():
         # Save to CSV
         save_to_csv(episodes)
 
+        # Extract and save unique authors
+        authors = set()
+        for ep in episodes:
+            if ep.get('author'):
+                authors.add(ep['author'])
+
+        authors_list = sorted(list(authors))
+
+        # Save authors to JSON
+        authors_json = 'data/bbc_world_book_club_authors.json'
+        with open(authors_json, 'w', encoding='utf-8') as f:
+            json.dump(authors_list, f, indent=2, ensure_ascii=False)
+        print(f"Saved {len(authors_list)} unique authors to {authors_json}")
+
+        # Save authors to CSV
+        authors_csv = 'data/bbc_world_book_club_authors.csv'
+        with open(authors_csv, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.writer(f)
+            writer.writerow(['author'])
+            for author in authors_list:
+                writer.writerow([author])
+        print(f"Saved {len(authors_list)} unique authors to {authors_csv}")
+
         # Print some sample episodes
         print("\nFirst 5 episodes:")
         for i, ep in enumerate(episodes[:5], 1):
-            print(f"{i}. {ep['title']}")
+            print(f"{i}. {ep['author'] or 'Unknown'} - {ep['book_title'] or ep['original_title']}")
             print(f"   Date: {ep['date']} | Duration: {ep['duration']}")
             print(f"   URL: {ep['url']}")
             print()

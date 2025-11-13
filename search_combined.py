@@ -48,10 +48,20 @@ def load_authors_from_json(filename):
 def load_bbc_authors(filename='data/bbc_world_book_club_episodes.json'):
     """
     Load authors from BBC World Book Club episodes.
+    First tries to load from bbc_world_book_club_authors.json,
+    falls back to extracting from episodes if not found.
 
     Returns:
         List of author names
     """
+    # Try loading from dedicated authors file first
+    authors_file = 'data/bbc_world_book_club_authors.json'
+    if os.path.exists(authors_file):
+        authors = load_authors_from_json(authors_file)
+        if authors:
+            return authors
+
+    # Fall back to extracting from episodes file
     if not os.path.exists(filename):
         print(f"File not found: {filename}")
         return []
