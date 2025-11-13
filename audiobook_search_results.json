@@ -1,0 +1,2907 @@
+{
+  "AS Byatt": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=AS%20Byatt&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Abdulrazak Gurnah": {
+    "count": 2,
+    "books": [
+      {
+        "title": "Paradise",
+        "author": "Abdulrazak Gurnah",
+        "id": "8919230",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Last Gift",
+        "author": "Abdulrazak Gurnah",
+        "id": "8831466",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Abdulrazak%20Gurnah&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Agatha Christie": {
+    "count": 15,
+    "books": [
+      {
+        "title": "Agatha Christie, Twelve Radio Mysteries",
+        "author": "Agatha Christie",
+        "id": "3031634",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Agatha Christie, The Lost Plays",
+        "author": "Agatha Christie",
+        "id": "3031632",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The £199 Adventure",
+        "author": "Agatha Christie",
+        "id": "453669",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Secret of Chimneys",
+        "author": "Agatha Christie",
+        "id": "9201449",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Murder on the Orient Express",
+        "author": "Agatha Christie",
+        "id": "453657",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Hercule Poirot's Silent Night",
+        "author": "Sophie Hannah",
+        "id": "10095501",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Murder on the Links",
+        "author": "Kate McAll",
+        "id": "6394469",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Secret Adversary",
+        "author": "Agatha Christie",
+        "id": "9054492",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Marple",
+        "author": "Agatha Christie",
+        "id": "10095519",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Dr Finlay",
+        "author": "AJ Cronin",
+        "id": "4736470",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Mrs Sidhu Investigates",
+        "author": "Suk Pannu",
+        "id": "9381868",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "A Cold Highland Wind",
+        "author": "Tasha Alexander",
+        "id": "9612731",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "You Are Fatally Invited",
+        "author": "Ande Pliego",
+        "id": "11039526",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Everyone In My Family Has Killed Someone",
+        "author": "Benjamin Stevenson",
+        "id": "8953083",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Ink Ribbon Red",
+        "author": "Alex Pavesi",
+        "id": "10544815",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Agatha%20Christie&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Alan Hollinghurst": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Alan%20Hollinghurst&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Ali Smith": {
+    "count": 5,
+    "books": [
+      {
+        "title": "Gliff",
+        "author": "Ali Smith",
+        "id": "10490215",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Ballad of Speedball Baby",
+        "author": "Ali Smith",
+        "id": "10032923",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The God of Small Things",
+        "author": "Arundhati Roy",
+        "id": "8777251",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "A Complicated Matter",
+        "author": "Anne Youngson",
+        "id": "9450871",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "We Do Not Part",
+        "author": "Han Kang",
+        "id": "11165087",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Ali%20Smith&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Amy Bloom": {
+    "count": 1,
+    "books": [
+      {
+        "title": "White Houses",
+        "author": "Amy Bloom",
+        "id": "9322870",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Amy%20Bloom&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Andrea Levy": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Andrea%20Levy&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Andrey Kurkov": {
+    "count": 1,
+    "books": [
+      {
+        "title": "Diary of an Invasion",
+        "author": "Andrey Kurkov",
+        "id": "9791411",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Andrey%20Kurkov&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Ann Cleeves": {
+    "count": 4,
+    "books": [
+      {
+        "title": "Silent Voices",
+        "author": "Ann Cleeves",
+        "id": "2166852",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Hercule Poirot's Silent Night",
+        "author": "Sophie Hannah",
+        "id": "10095501",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Mephisto Club",
+        "author": "Tess Gerritsen",
+        "id": "8750441",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Our Little Cruelties",
+        "author": "Liz Nugent",
+        "id": "4865011",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Ann%20Cleeves&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Ann Patchett": {
+    "count": 6,
+    "books": [
+      {
+        "title": "Tom Lake",
+        "author": "Ann Patchett",
+        "id": "9632565",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Because of Winn-Dixie",
+        "author": "Kate DiCamillo",
+        "id": "5996772",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Tell Me What I Am",
+        "author": "Una Mannion",
+        "id": "9220814",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Madame Matisse",
+        "author": "Sophie Haydock",
+        "id": "10276575",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Correspondent",
+        "author": "Virginia Evans",
+        "id": "11087345",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Lincoln Highway",
+        "author": "Amor Towles",
+        "id": "6076699",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Ann%20Patchett&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Anne Enright": {
+    "count": 4,
+    "books": [
+      {
+        "title": "The Spinning Heart",
+        "author": "Donal Ryan",
+        "id": "10662985",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Soldier Sailor",
+        "author": "Claire Kilroy",
+        "id": "9168086",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Old God's Time",
+        "author": "Sebastian Barry",
+        "id": "9072924",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "My Name Is Lucy Barton",
+        "author": "Elizabeth Strout",
+        "id": "5225239",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Anne%20Enright&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Anne Holt": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Anne%20Holt&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Antonio Muñoz Molina": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Antonio%20Mu%C3%B1oz%20Molina&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Anuk Arudpragasam": {
+    "count": 1,
+    "books": [
+      {
+        "title": "A Passage North",
+        "author": "Anuk Arudpragasam",
+        "id": "7452954",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Anuk%20Arudpragasam&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Anuradha Roy": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Anuradha%20Roy&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Arthur Conan Doyle": {
+    "count": 1,
+    "books": [
+      {
+        "title": "Sherlock Holmes Collection--5 Full Audiobooks",
+        "author": "Sir Arthur Conan Doyle",
+        "id": "6030877",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Arthur%20Conan%20Doyle&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Audrey Niffenegger": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Audrey%20Niffenegger&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Ayelet Gundar-Goshen": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Ayelet%20Gundar-Goshen&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Ben Lerner": {
+    "count": 1,
+    "books": [
+      {
+        "title": "The Unfolding",
+        "author": "A. M. Homes",
+        "id": "9241166",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Ben%20Lerner&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Bernardine Evaristo": {
+    "count": 5,
+    "books": [
+      {
+        "title": "Between Starshine and Clay",
+        "author": "Sarah Ladipo Manyika",
+        "id": "9816176",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Without Prejudice",
+        "author": "Nicola Williams",
+        "id": "5806340",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Last White Man",
+        "author": "Mohsin Hamid",
+        "id": "7717320",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Recitatif",
+        "author": "Toni Morrison",
+        "id": "8750432",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Assembly",
+        "author": "Natasha Brown",
+        "id": "6041148",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Bernardine%20Evaristo&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Bill Bryson": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Bill%20Bryson&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Brit Bennett": {
+    "count": 2,
+    "books": [
+      {
+        "title": "Real Americans",
+        "author": "Rachel Khong",
+        "id": "10105933",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Small Worlds",
+        "author": "Caleb Azumah Nelson",
+        "id": "9183364",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Brit%20Bennett&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Bryan Washington": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Bryan%20Washington&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Burhan Sönmez": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Burhan%20S%C3%B6nmez&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Carlo Rovelli": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Carlo%20Rovelli&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Cees Nooteboom": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Cees%20Nooteboom&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Celeste Ng": {
+    "count": 5,
+    "books": [
+      {
+        "title": "Everything I Never Told You",
+        "author": "Celeste Ng",
+        "id": "5563421",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Moth Smoke",
+        "author": "Mohsin Hamid",
+        "id": "6132822",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Between Two Kingdoms",
+        "author": "Suleika Jaouad",
+        "id": "5783713",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "This Place is Still Beautiful",
+        "author": "XiXi Tian",
+        "id": "8777339",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "If I Had Your Face",
+        "author": "Frances Cha",
+        "id": "5287719",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Celeste%20Ng&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Chan Koonchung": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Chan%20Koonchung&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Charlotte Brontë": {
+    "count": 2,
+    "books": [
+      {
+        "title": "Jane Eyre",
+        "author": "Charlotte Brontë",
+        "id": "5891339",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Tenant of Wildfell Hall",
+        "author": "Anne Brontë",
+        "id": "4855057",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Charlotte%20Bront%C3%AB&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Charlotte Wood": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Charlotte%20Wood&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Chigozie Obioma": {
+    "count": 1,
+    "books": [
+      {
+        "title": "The Road to the Country",
+        "author": "Chigozie Obioma",
+        "id": "10208202",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Chigozie%20Obioma&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Curtis Sittenfeld": {
+    "count": 6,
+    "books": [
+      {
+        "title": "Romantic Comedy",
+        "author": "Curtis Sittenfeld",
+        "id": "9139321",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "So Late in the Day",
+        "author": "Claire Keegan",
+        "id": "9515767",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Pineapple Street",
+        "author": "Jenny Jackson",
+        "id": "9112267",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The God of Good Looks",
+        "author": "Breanne Mc Ivor",
+        "id": "9451109",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Daisy Jones and the Six",
+        "author": "Taylor Jenkins Reid",
+        "id": "4242535",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "If I Had Your Face",
+        "author": "Frances Cha",
+        "id": "5287719",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Curtis%20Sittenfeld&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "DBC Pierre": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=DBC%20Pierre&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "David Nicholls": {
+    "count": 8,
+    "books": [
+      {
+        "title": "Sweet Sorrow",
+        "author": "David Nicholls",
+        "id": "5563880",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Us",
+        "author": "David Nicholls",
+        "id": "3936091",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "You Are Here",
+        "author": "David Nicholls",
+        "id": "10625364",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "May All Your Skies Be Blue",
+        "author": "Fíona Scarlett",
+        "id": "11113798",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Love Forms",
+        "author": "Claire Adam",
+        "id": "11867113",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Oh, Sister",
+        "author": "Jodie Chapman",
+        "id": "9239810",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Flirting With Disaster",
+        "author": "Naina Kumar",
+        "id": "11103417",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Small Worlds",
+        "author": "Caleb Azumah Nelson",
+        "id": "9183364",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=David%20Nicholls&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Deborah Levy": {
+    "count": 5,
+    "books": [
+      {
+        "title": "Cursed Bread",
+        "author": "Sophie Mackintosh",
+        "id": "9239785",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Gliff",
+        "author": "Ali Smith",
+        "id": "10490215",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "We Do Not Part",
+        "author": "Han Kang",
+        "id": "11165087",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Crane Wife",
+        "author": "Christina Joyce Hauser",
+        "id": "7285529",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "If I Had Your Face",
+        "author": "Frances Cha",
+        "id": "5287719",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Deborah%20Levy&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Deborah Moggach": {
+    "count": 1,
+    "books": [
+      {
+        "title": "The Best Exotic Marigold Hotel",
+        "author": "Deborah Moggach",
+        "id": "5563927",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Deborah%20Moggach&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Delphine de Vigan": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Delphine%20de%20Vigan&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Derek Walcott": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Derek%20Walcott&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Donna Leon": {
+    "count": 1,
+    "books": [
+      {
+        "title": "A Refiner's Fire",
+        "author": "Donna Leon",
+        "id": "10326821",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Donna%20Leon&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Douglas Stuart": {
+    "count": 2,
+    "books": [
+      {
+        "title": "Shuggie Bain",
+        "author": "Douglas Stuart",
+        "id": "5273799",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "A Man and His Pride",
+        "author": "Luke Rutledge",
+        "id": "9399658",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Douglas%20Stuart&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Edna O'Brien": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Edna%20O%27Brien&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Elif Batuman": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Elif%20Batuman&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Elizabeth Gilbert": {
+    "count": 7,
+    "books": [
+      {
+        "title": "Eat Pray Love",
+        "author": "Elizabeth Gilbert",
+        "id": "8801402",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Great Slave",
+        "author": "Zane Grey",
+        "id": "5613675",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Summer of the Star",
+        "author": "Johnny D. Boggs",
+        "id": "5613495",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Crane Wife",
+        "author": "Christina Joyce Hauser",
+        "id": "7285529",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "73 Dove Street",
+        "author": "Julie Owen Moylan",
+        "id": "9402858",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Between Two Kingdoms",
+        "author": "Suleika Jaouad",
+        "id": "5783713",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Daisy Jones and the Six",
+        "author": "Taylor Jenkins Reid",
+        "id": "4242535",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Elizabeth%20Gilbert&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Elizabeth Strout": {
+    "count": 6,
+    "books": [
+      {
+        "title": "Olive Kitteridge",
+        "author": "Elizabeth Strout",
+        "id": "4470955",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "My Name Is Lucy Barton",
+        "author": "Elizabeth Strout",
+        "id": "5225239",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "So Late in the Day",
+        "author": "Claire Keegan",
+        "id": "9515767",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Correspondent",
+        "author": "Virginia Evans",
+        "id": "11087345",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Lincoln Highway",
+        "author": "Amor Towles",
+        "id": "6076699",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "How to Pronounce Knife",
+        "author": "Souvankham Thammavongsa",
+        "id": "9082664",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Elizabeth%20Strout&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Ewald Arenz": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Ewald%20Arenz&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Fatima Bhutto": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Fatima%20Bhutto&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Fyodor Dostoyevsky": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Fyodor%20Dostoyevsky&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Graeme Macrae Burnet": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Graeme%20Macrae%20Burnet&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Helen Garner": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Helen%20Garner&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Hilary Mantel": {
+    "count": 6,
+    "books": [
+      {
+        "title": "Giving Up the Ghost",
+        "author": "Hilary Mantel",
+        "id": "3646275",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Sovereign",
+        "author": "CJ Sansom",
+        "id": "3032557",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Dark Fire",
+        "author": "CJ Sansom",
+        "id": "3031854",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Dissolution",
+        "author": "CJ Sansom",
+        "id": "3031899",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "So Late in the Day",
+        "author": "Claire Keegan",
+        "id": "9515767",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Shardlake",
+        "author": "CJ Sansom",
+        "id": "5849421",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Hilary%20Mantel&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Héctor Abad": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=H%C3%A9ctor%20Abad&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Jackie Kay": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Jackie%20Kay&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "James Ellroy": {
+    "count": 1,
+    "books": [
+      {
+        "title": "Love Me Fierce In Danger",
+        "author": "Steven Powell",
+        "id": "9511900",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=James%20Ellroy&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Jane Gardam": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Jane%20Gardam&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Jane Harper": {
+    "count": 4,
+    "books": [
+      {
+        "title": "Exiles",
+        "author": "Jane Harper",
+        "id": "9431911",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Lost Man",
+        "author": "Jane Harper",
+        "id": "5564117",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Dry",
+        "author": "Jane Harper",
+        "id": "5564001",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Force of Nature",
+        "author": "Jane Harper",
+        "id": "5253170",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Jane%20Harper&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Jeffrey Archer": {
+    "count": 21,
+    "books": [
+      {
+        "title": "Willy Visits the Square World",
+        "author": "Jeffrey Archer",
+        "id": "8812213",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Willy and the Killer Kipper",
+        "author": "Jeffrey Archer",
+        "id": "8812212",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "By Royal Appointment",
+        "author": "Jeffrey Archer",
+        "id": "8811935",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Sons of Fortune",
+        "author": "Jeffrey Archer",
+        "id": "6029222",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Eleventh Commandment",
+        "author": "Jeffrey Archer",
+        "id": "6115384",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "An Eye for an Eye",
+        "author": "Jeffrey Archer",
+        "id": "10394648",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Over My Dead Body",
+        "author": "Jeffrey Archer",
+        "id": "6022942",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Not a Penny More, Not a Penny Less",
+        "author": "Jeffrey Archer",
+        "id": "1859927",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "First Among Equals",
+        "author": "Jeffrey Archer",
+        "id": "1887163",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "As the Crow Flies",
+        "author": "Jeffrey Archer",
+        "id": "1341482",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Sons of Fortune",
+        "author": "Jeffrey Archer",
+        "id": "3168096",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "A Matter of Honor",
+        "author": "Jeffrey Archer",
+        "id": "1341479",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "To Cut a Long Story Short",
+        "author": "Jeffrey Archer",
+        "id": "6490520",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Fourth Estate",
+        "author": "Jeffrey Archer",
+        "id": "6029322",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Traitors Gate",
+        "author": "Jeffrey Archer",
+        "id": "10095625",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Jeffrey Archer: Not a Penny More, Not a Penny Less, A Matter of Honour",
+        "author": "Jeffrey Archer",
+        "id": "8750424",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "A Twist in the Tale",
+        "author": "Jeffrey Archer",
+        "id": "6663359",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Twelve Red Herrings",
+        "author": "Jeffrey Archer",
+        "id": "6125276",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Detective Galbraith: The King of Diamonds / The Midas Touch",
+        "author": "Robert Barr",
+        "id": "8025537",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Desolation Code",
+        "author": "Graham Brown",
+        "id": "11009478",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The New Kingdom",
+        "author": "Wilbur Smith",
+        "id": "6223468",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Jeffrey%20Archer&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Jennifer Egan": {
+    "count": 2,
+    "books": [
+      {
+        "title": "My Name Is Lucy Barton",
+        "author": "Elizabeth Strout",
+        "id": "5225239",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Moth Smoke",
+        "author": "Mohsin Hamid",
+        "id": "6132822",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Jennifer%20Egan&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Jenny Erpenbeck": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Jenny%20Erpenbeck&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "JoJo Moyes": {
+    "count": 8,
+    "books": [
+      {
+        "title": "The Giver of Stars",
+        "author": "Jojo Moyes",
+        "id": "5561166",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Paris for One",
+        "author": "Jojo Moyes",
+        "id": "5563736",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Bride of Almond Tree",
+        "author": "Robert Hillman",
+        "id": "6164881",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Romantic Comedy",
+        "author": "Curtis Sittenfeld",
+        "id": "9139321",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Flirting With Disaster",
+        "author": "Naina Kumar",
+        "id": "11103417",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Mystery of Mercy Close",
+        "author": "Marian Keyes",
+        "id": "1264047",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "A Cornish Summer",
+        "author": "Catherine Alliott",
+        "id": "4576784",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "How to Age Disgracefully",
+        "author": "Clare Pooley",
+        "id": "10056456",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=JoJo%20Moyes&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Jonathan Franzen": {
+    "count": 2,
+    "books": [
+      {
+        "title": "The Unfolding",
+        "author": "A. M. Homes",
+        "id": "9241166",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "My Name Is Lucy Barton",
+        "author": "Elizabeth Strout",
+        "id": "5225239",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Jonathan%20Franzen&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Joël Dicker": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Jo%C3%ABl%20Dicker&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Juan Gabriel Vasquez": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Juan%20Gabriel%20Vasquez&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Judith Kerr": {
+    "count": 1,
+    "books": [
+      {
+        "title": "Stories for Summer Holidays",
+        "author": "HarperCollins Children's Books",
+        "id": "4229705",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Judith%20Kerr&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Juhea Kim": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Juhea%20Kim&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Junot Diaz": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Junot%20Diaz&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Karl Ove Knausgaard": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Karl%20Ove%20Knausgaard&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Kate Atkinson": {
+    "count": 1,
+    "books": [
+      {
+        "title": "Romantic Comedy",
+        "author": "Curtis Sittenfeld",
+        "id": "9139321",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Kate%20Atkinson&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Kate Mosse": {
+    "count": 1,
+    "books": [
+      {
+        "title": "Marple",
+        "author": "Agatha Christie",
+        "id": "10095519",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Kate%20Mosse&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Kevin Kwan": {
+    "count": 2,
+    "books": [
+      {
+        "title": "Pineapple Street",
+        "author": "Jenny Jackson",
+        "id": "9112267",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Moth Smoke",
+        "author": "Mohsin Hamid",
+        "id": "6132822",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Kevin%20Kwan&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Kiley Reid": {
+    "count": 3,
+    "books": [
+      {
+        "title": "Two Stories",
+        "author": "Sally Rooney",
+        "id": "5444983",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Pineapple Street",
+        "author": "Jenny Jackson",
+        "id": "9112267",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "If I Had Your Face",
+        "author": "Frances Cha",
+        "id": "5287719",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Kiley%20Reid&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Laura Restrepo": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Laura%20Restrepo&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Lee Child": {
+    "count": 11,
+    "books": [
+      {
+        "title": "Safe Enough",
+        "author": "Lee Child",
+        "id": "10524403",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Cleaning the Gold",
+        "author": "Karin Slaughter",
+        "id": "4692448",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "MatchUp",
+        "author": "Lee Child",
+        "id": "3021630",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Exit Wounds",
+        "author": "Jeffery Deaver",
+        "id": "5131460",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Venice Conspiracy",
+        "author": "Sam Christer",
+        "id": "6041565",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Target Acquired",
+        "author": "Don Bentley",
+        "id": "6201507",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Wild Dogs",
+        "author": "Michael Trant",
+        "id": "7150795",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "No Trace",
+        "author": "Michael Trant",
+        "id": "9569064",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Desolation Code",
+        "author": "Graham Brown",
+        "id": "11009478",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Golden Buddha",
+        "author": "Craig Dirgo",
+        "id": "3886714",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Buy a Bullet",
+        "author": "Gregg Hurwitz",
+        "id": "8732776",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Lee%20Child&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Leila Aboulela": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Leila%20Aboulela&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Leïla Slimani": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Le%C3%AFla%20Slimani&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Lijia Zhang": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Lijia%20Zhang&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Louise Penny": {
+    "count": 11,
+    "books": [
+      {
+        "title": "Still Life",
+        "author": "Louise Penny",
+        "id": "1735678",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "A World of Curiosities",
+        "author": "Louise Penny",
+        "id": "8970072",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "All the Devils Are Here",
+        "author": "Louise Penny",
+        "id": "5233416",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Kingdom of the Blind",
+        "author": "Louise Penny",
+        "id": "3788122",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Glass Houses",
+        "author": "Louise Penny",
+        "id": "3284451",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Madness of Crowds",
+        "author": "Louise Penny",
+        "id": "6011315",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "A Better Man",
+        "author": "Louise Penny",
+        "id": "4603951",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "A Great Reckoning",
+        "author": "Louise Penny",
+        "id": "2781799",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Hangman",
+        "author": "Louise Penny",
+        "id": "7602016",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "State of Terror",
+        "author": "Hillary Rodham Clinton",
+        "id": "6267901",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Unlocking Season",
+        "author": "Gail Bowen",
+        "id": "5705763",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Louise%20Penny&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Manu Joseph": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Manu%20Joseph&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Margaret Drabble": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Margaret%20Drabble&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Marie Darrieussecq": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Marie%20Darrieussecq&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Maylis De Kerangal": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Maylis%20De%20Kerangal&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Meg Rosoff": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Meg%20Rosoff&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Michael Chabon": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Michael%20Chabon&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Michelle de Kretser": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Michelle%20de%20Kretser&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Miriam Toews": {
+    "count": 1,
+    "books": [
+      {
+        "title": "My Name Is Lucy Barton",
+        "author": "Elizabeth Strout",
+        "id": "5225239",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Miriam%20Toews&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Mohsin Hamid": {
+    "count": 2,
+    "books": [
+      {
+        "title": "The Last White Man",
+        "author": "Mohsin Hamid",
+        "id": "7717320",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Moth Smoke",
+        "author": "Mohsin Hamid",
+        "id": "6132822",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Mohsin%20Hamid&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Monique Roffey": {
+    "count": 1,
+    "books": [
+      {
+        "title": "Soul of the Deep",
+        "author": "Natasha Bowen",
+        "id": "8847577",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Monique%20Roffey&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "N.K Jemisin": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=N.K%20Jemisin&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Naoise Dolan": {
+    "count": 1,
+    "books": [
+      {
+        "title": "If I Had Your Face",
+        "author": "Frances Cha",
+        "id": "5287719",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Naoise%20Dolan&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Naomi Alderman": {
+    "count": 5,
+    "books": [
+      {
+        "title": "Marple",
+        "author": "Agatha Christie",
+        "id": "10095519",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Julia",
+        "author": "Sandra Newman",
+        "id": "10035012",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Unfolding",
+        "author": "A. M. Homes",
+        "id": "9241166",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Grace Year",
+        "author": "Kim Liggett",
+        "id": "4835081",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "If I Had Your Face",
+        "author": "Frances Cha",
+        "id": "5287719",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Naomi%20Alderman&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Ngũgĩ wa Thiong'o": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Ng%C5%A9g%C4%A9%20wa%20Thiong%27o&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "NoViolet Bulawayo": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=NoViolet%20Bulawayo&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Nuruddin Farah": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Nuruddin%20Farah&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Ottessa Moshfegh": {
+    "count": 1,
+    "books": [
+      {
+        "title": "Cursed Bread",
+        "author": "Sophie Mackintosh",
+        "id": "9239785",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Ottessa%20Moshfegh&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Oyinkan Braithwaite": {
+    "count": 1,
+    "books": [
+      {
+        "title": "The Baby Is Mine",
+        "author": "Oyinkan Braithwaite",
+        "id": "6396916",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Oyinkan%20Braithwaite&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Paul Auster": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Paul%20Auster&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Paul Theroux": {
+    "count": 1,
+    "books": [
+      {
+        "title": "The Mosquito Coast",
+        "author": "Paul Theroux",
+        "id": "6434792",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Paul%20Theroux&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Percival Everett": {
+    "count": 2,
+    "books": [
+      {
+        "title": "Intermezzo",
+        "author": "Sally Rooney",
+        "id": "10690946",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Old God's Time",
+        "author": "Sebastian Barry",
+        "id": "9072924",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Percival%20Everett&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Petina Gappah": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Petina%20Gappah&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Pilar Quintana": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Pilar%20Quintana&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Richard Flanagan": {
+    "count": 1,
+    "books": [
+      {
+        "title": "My Name Is Lucy Barton",
+        "author": "Elizabeth Strout",
+        "id": "5225239",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Richard%20Flanagan&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Robert Harris": {
+    "count": 7,
+    "books": [
+      {
+        "title": "The Lock-Up",
+        "author": "John Banville",
+        "id": "9168088",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "MatchUp",
+        "author": "Lee Child",
+        "id": "3021630",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Detective Galbraith: The King of Diamonds / The Midas Touch",
+        "author": "Robert Barr",
+        "id": "8025537",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Playing for Pizza",
+        "author": "John Grisham",
+        "id": "2672749",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Hercule Poirot's Silent Night",
+        "author": "Sophie Hannah",
+        "id": "10095501",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Target Acquired",
+        "author": "Don Bentley",
+        "id": "6201507",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Agent Running in the Field",
+        "author": "John le CarrГ©",
+        "id": "4485890",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Robert%20Harris&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Robert Seethaler": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Robert%20Seethaler&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Sarah Waters": {
+    "count": 1,
+    "books": [
+      {
+        "title": "Normal People",
+        "author": "Sally Rooney",
+        "id": "9929302",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Sarah%20Waters&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Sebastian Barry": {
+    "count": 2,
+    "books": [
+      {
+        "title": "Old God's Time",
+        "author": "Sebastian Barry",
+        "id": "9072924",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Secret Scripture",
+        "author": "Sebastian Barry",
+        "id": "10227350",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Sebastian%20Barry&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Shehan Karunatilaka": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Shehan%20Karunatilaka&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Silvia Moreno-Garcia": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Silvia%20Moreno-Garcia&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Siri Hustvedt": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Siri%20Hustvedt&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Sjón": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Sj%C3%B3n&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Sofi Oksanen": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Sofi%20Oksanen&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Sunjeev Sahota": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Sunjeev%20Sahota&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Tahmima Anam": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Tahmima%20Anam&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Tan Twan Eng": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Tan%20Twan%20Eng&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Tessa Hadley": {
+    "count": 3,
+    "books": [
+      {
+        "title": "After the Funeral",
+        "author": "Tessa Hadley",
+        "id": "9579338",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "A Complicated Matter",
+        "author": "Anne Youngson",
+        "id": "9450871",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Oh, Sister",
+        "author": "Jodie Chapman",
+        "id": "9239810",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Tessa%20Hadley&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Tim Winton": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Tim%20Winton&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Tsitsi Dangarembga": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Tsitsi%20Dangarembga&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Wole Soyinka": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Wole%20Soyinka&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Women of the World": {
+    "count": 24,
+    "books": [
+      {
+        "title": "A World of Curiosities",
+        "author": "Louise Penny",
+        "id": "8970072",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "WOMEN WITH ADHD SMART EDITION",
+        "author": "Patricia Bloom",
+        "id": "8476626",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Last Year of the War",
+        "author": "Susan Meissner",
+        "id": "4197538",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "With Love, From Cold World",
+        "author": "Alicia Thompson",
+        "id": "9630668",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Nature of Fragile Things",
+        "author": "Susan Meissner",
+        "id": "5522741",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "10 Minutes 38 Seconds in this Strange World",
+        "author": "Elif Shafak",
+        "id": "4558757",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Grace Year",
+        "author": "Kim Liggett",
+        "id": "4835081",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "A Bridge Across the Ocean",
+        "author": "Susan Meissner",
+        "id": "2962376",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Slow Productivity",
+        "author": "Cal Newport",
+        "id": "10156509",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Barbara Pym: Some Tame Gazelle, No Fond Return of Love, Crampton Hodnet & More",
+        "author": "Miriam Margolyes",
+        "id": "8732696",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "There are Rivers in the Sky",
+        "author": "Elif Shafak",
+        "id": "10105938",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Edda Mussolini",
+        "author": "Caroline Moorehead",
+        "id": "8893398",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Women Who Risk",
+        "author": "Tom Doyle",
+        "id": "5340540",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Change Your World",
+        "author": "John C. Maxwell",
+        "id": "5340364",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The World's Worst Children",
+        "author": "David Walliams",
+        "id": "9529627",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "A Short Walk Through a Wide World",
+        "author": "Douglas Westerbeke",
+        "id": "10252596",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Librarian Spy",
+        "author": "Madeline Martin",
+        "id": "8742813",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "You Have the Power",
+        "author": "Leah Williamson",
+        "id": "9716704",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "A Woman of Firsts",
+        "author": "Edna Adan Ismail",
+        "id": "4500596",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Find Your People",
+        "author": "Jennie Allen",
+        "id": "6476762",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "You Are Unshaken",
+        "author": "Laura Krokos",
+        "id": "9561179",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "We'll Prescribe You a Cat",
+        "author": "Syou Ishida",
+        "id": "10577387",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "If I Were You",
+        "author": "Lynn Austin",
+        "id": "5512656",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "The Garden of Lost Secrets",
+        "author": "Kelly Bowen",
+        "id": "9215630",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Women%20of%20the%20World&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Xiaolu Guo": {
+    "count": 0,
+    "books": [],
+    "url": "https://westerncape.overdrive.com/search?query=Xiaolu%20Guo&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Yaa Gyasi": {
+    "count": 4,
+    "books": [
+      {
+        "title": "Transcendent Kingdom",
+        "author": "Yaa Gyasi",
+        "id": "5626956",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Without Prejudice",
+        "author": "Nicola Williams",
+        "id": "5806340",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "Small Worlds",
+        "author": "Caleb Azumah Nelson",
+        "id": "9183364",
+        "available": true,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "This Place is Still Beautiful",
+        "author": "XiXi Tian",
+        "id": "8777339",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Yaa%20Gyasi&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  },
+  "Yiyun Li": {
+    "count": 2,
+    "books": [
+      {
+        "title": "How Not to Kill Yourself",
+        "author": "Clancy Martin",
+        "id": "9829539",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      },
+      {
+        "title": "How to Pronounce Knife",
+        "author": "Souvankham Thammavongsa",
+        "id": "9082664",
+        "available": false,
+        "formats": [
+          "OverDrive Listen audiobook",
+          "MP3 audiobook"
+        ]
+      }
+    ],
+    "url": "https://westerncape.overdrive.com/search?query=Yiyun%20Li&format=audiobook-overdrive%2Caudiobook-overdrive-provisional&sortBy=relevance"
+  }
+}
