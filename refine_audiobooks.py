@@ -53,7 +53,7 @@ def names_match(searched_author: str, book_author: str, threshold: float = 0.85)
     return similarity >= threshold
 
 
-def refine_results(input_file: str = "audiobook_search_results.json") -> Dict:
+def refine_results(input_file: str = "data/audiobook_search_results.json") -> Dict:
     """
     Load results and filter to keep only books where author matches searched author.
 
@@ -138,7 +138,7 @@ def refine_results(input_file: str = "audiobook_search_results.json") -> Dict:
     return refined_results
 
 
-def save_refined_results(results: Dict, output_file: str = "audiobook_search_results_refined.json"):
+def save_refined_results(results: Dict, output_file: str = "data/audiobook_search_results_refined.json"):
     """Save refined results to JSON and CSV files."""
 
     # Save JSON

@@ -172,13 +172,13 @@ def main():
     )
     parser.add_argument(
         '--input',
-        default='audiobook_search_results_refined.json',
-        help='Input JSON file with book data (default: audiobook_search_results_refined.json)'
+        default='data/audiobook_search_results_refined.json',
+        help='Input JSON file with book data (default: data/audiobook_search_results_refined.json)'
     )
     parser.add_argument(
         '--output',
-        default='available_audiobooks.json',
-        help='Output JSON file for available books (default: available_audiobooks.json)'
+        default='data/available_audiobooks.json',
+        help='Output JSON file for available books (default: data/available_audiobooks.json)'
     )
     parser.add_argument(
         '--delay',

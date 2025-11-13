@@ -154,10 +154,10 @@ def main():
 
     # Load the book data
     try:
-        with open('audiobook_search_results_refined.json', 'r', encoding='utf-8') as f:
+        with open('data/audiobook_search_results_refined.json', 'r', encoding='utf-8') as f:
             books_data = json.load(f)
     except FileNotFoundError:
-        print("Error: audiobook_search_results_refined.json not found")
+        print("Error: data/audiobook_search_results_refined.json not found")
         sys.exit(1)
 
     check_author_books(author_name, books_data)

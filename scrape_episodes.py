@@ -117,14 +117,14 @@ def scrape_all_episodes(start_page=0, end_page=13):
     return all_episodes
 
 
-def save_to_json(episodes, filename='bbc_world_book_club_episodes.json'):
+def save_to_json(episodes, filename='data/bbc_world_book_club_episodes.json'):
     """Save episodes to JSON file."""
     with open(filename, 'w', encoding='utf-8') as f:
         json.dump(episodes, f, indent=2, ensure_ascii=False)
     print(f"\nSaved {len(episodes)} episodes to {filename}")
 
 
-def save_to_csv(episodes, filename='bbc_world_book_club_episodes.csv'):
+def save_to_csv(episodes, filename='data/bbc_world_book_club_episodes.csv'):
     """Save episodes to CSV file."""
     if not episodes:
         print("No episodes to save to CSV")

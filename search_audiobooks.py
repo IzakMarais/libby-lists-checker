@@ -112,7 +112,7 @@ def test_single_author():
     return result
 
 
-def load_episodes(filepath: str = "bbc_world_book_club_episodes.json") -> List[Dict]:
+def load_episodes(filepath: str = "data/bbc_world_book_club_episodes.json") -> List[Dict]:
     """Load episode data from JSON file."""
     with open(filepath, 'r', encoding='utf-8') as f:
         return json.load(f)
@@ -183,7 +183,7 @@ def print_results(results: Dict[str, Dict]):
     print("=" * 70)
 
 
-def save_results(results: Dict[str, Dict], filepath: str = "audiobook_search_results.json"):
+def save_results(results: Dict[str, Dict], filepath: str = "data/audiobook_search_results.json"):
     """Save results to a JSON file."""
     with open(filepath, 'w', encoding='utf-8') as f:
         json.dump(results, f, indent=2, ensure_ascii=False)

@@ -48,7 +48,7 @@ Fetches each book's page from `https://westerncape.overdrive.com/media/{book_id}
 - `(1/1)` = 1 available copy out of 1 total
 - `(0/1)` = All copies checked out
 
-Results are saved to `available_audiobooks.json` with borrowing URLs.
+Results are saved to `data/available_audiobooks.json` with borrowing URLs.
 
 ## Full Workflow
 
@@ -57,17 +57,38 @@ These scripts work with your existing BBC World Book Club workflow:
 ```bash
 # 1. Scrape BBC World Book Club episodes
 python scrape_episodes.py
-# Creates: bbc_world_book_club_episodes.json, bbc_world_book_club_episodes.csv
+# Creates: data/bbc_world_book_club_episodes.json, data/bbc_world_book_club_episodes.csv
 
 # 2. Search for audiobooks in the library
 python search_audiobooks.py
-# Creates: audiobook_search_results.json, audiobook_search_results.csv
+# Creates: data/audiobook_search_results.json, data/audiobook_search_results.csv
 
 # 3. Refine the search results
 python refine_audiobooks.py
-# Creates: audiobook_search_results_refined.json, audiobook_search_results_refined.csv
+# Creates: data/audiobook_search_results_refined.json, data/audiobook_search_results_refined.csv
 
 # 4. Check which books are currently available
 python check_availability.py
-# Creates: available_audiobooks.json
+# Creates: data/available_audiobooks.json
+```
+
+## Project Structure
+
+```
+.
+├── check_availability.py      # Check availability of all books
+├── check_by_author.py         # Check availability for one author
+├── check_single_book.py       # Check availability for one book
+├── scrape_episodes.py         # Scrape BBC World Book Club episodes
+├── search_audiobooks.py       # Search library for audiobooks
+├── refine_audiobooks.py       # Filter search results
+├── requirements.in            # Python dependencies
+└── data/                      # All data files (CSV, JSON, etc.)
+    ├── bbc_world_book_club_episodes.json
+    ├── bbc_world_book_club_episodes.csv
+    ├── audiobook_search_results.json
+    ├── audiobook_search_results.csv
+    ├── audiobook_search_results_refined.json
+    ├── audiobook_search_results_refined.csv
+    └── available_audiobooks.json
 ```
