@@ -87,33 +87,43 @@ def fetch_availability(book_id: str) -> Tuple[bool, int, int, Optional[str]]:
         return False, 0, 0, None
 
 
-def check_all_books(books_data: Dict, delay: float = 0.5) -> List[Dict]:
+def check_all_books(books_data: Dict, delay: float = 0.5, limit: int = None) -> List[Dict]:
     """
     Check availability for all books in the dataset.
 
     Args:
         books_data: Dictionary containing book information
         delay: Delay between requests in seconds (to be respectful to the server)
+        limit: Maximum number of books to check (None for all)
 
     Returns:
         List of available books with their details
     """
     available_books = []
     total_books = sum(author_data['count'] for author_data in books_data.values())
+    
+    if limit:
+        print(f"Checking availability for up to {limit} books (limited from {total_books})...\n")
+    else:
+        print(f"Checking availability for {total_books} books...\n")
+    
     processed = 0
-
-    print(f"Checking availability for {total_books} books...\n")
+    checked = 0
 
     for author, author_data in books_data.items():
         if author_data['count'] == 0:
             continue
 
         for book in author_data['books']:
+            if limit and checked >= limit:
+                break
+            
             processed += 1
+            checked += 1
             book_id = book['id']
             title = book['title']
 
-            print(f"[{processed}/{total_books}] Checking: {title} by {author}...", end=' ')
+            print(f"[{checked}/{min(limit, total_books) if limit else total_books}] Checking: {title} by {author}...", end=' ')
 
             is_available, available_copies, owned_copies, description = fetch_availability(book_id)
 
@@ -134,6 +144,9 @@ def check_all_books(books_data: Dict, delay: float = 0.5) -> List[Dict]:
 
             # Be respectful to the server
             time.sleep(delay)
+        
+        if limit and checked >= limit:
+            break
 
     return available_books
 
@@ -187,6 +200,13 @@ def main():
         help='Delay between requests in seconds (default: 0.5)'
     )
 
+    parser.add_argument(
+        '--limit',
+        type=int,
+        default=None,
+        help='Limit number of books to check (default: check all)'
+    )
+
     args = parser.parse_args()
 
     # Load the book data
@@ -195,7 +215,7 @@ def main():
         books_data = json.load(f)
 
     # Check availability
-    available_books = check_all_books(books_data, delay=args.delay)
+    available_books = check_all_books(books_data, delay=args.delay, limit=args.limit)
 
     # Save results
     save_results(available_books, args.output)

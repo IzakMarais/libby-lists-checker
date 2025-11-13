@@ -6,6 +6,8 @@ matches the searched author.
 
 import json
 import csv
+import argparse
+import os
 from typing import Dict, List
 from difflib import SequenceMatcher
 
@@ -53,12 +55,13 @@ def names_match(searched_author: str, book_author: str, threshold: float = 0.85)
     return similarity >= threshold
 
 
-def refine_results(input_file: str = "data/audiobook_search_results.json") -> Dict:
+def refine_results(input_file: str = "data/audiobook_search_results.json", limit: int = None) -> Dict:
     """
     Load results and filter to keep only books where author matches searched author.
 
     Args:
         input_file: Path to the input JSON file
+        limit: Maximum number of authors to process (None for all)
 
     Returns:
         Dictionary with refined results
@@ -67,6 +70,12 @@ def refine_results(input_file: str = "data/audiobook_search_results.json") -> Di
 
     with open(input_file, 'r', encoding='utf-8') as f:
         results = json.load(f)
+
+    # Apply limit if specified
+    if limit:
+        items = list(results.items())[:limit]
+        results = dict(items)
+        print(f"Limited to {len(results)} authors")
 
     refined_results = {}
     total_books_before = 0
@@ -214,6 +223,36 @@ def print_refined_results(results: Dict):
 
 def main():
     """Main function."""
+    parser = argparse.ArgumentParser(
+        description='Refine audiobook search results to match searched authors'
+    )
+
+    parser.add_argument(
+        '--input',
+        default='data/audiobook_search_results.json',
+        help='Input JSON file with search results (default: data/audiobook_search_results.json)'
+    )
+
+    parser.add_argument(
+        '--output',
+        default=None,
+        help='Output JSON file for refined results (default: {input}_refined.json)'
+    )
+
+    parser.add_argument(
+        '--limit',
+        type=int,
+        default=None,
+        help='Limit number of authors to process (default: process all)'
+    )
+
+    args = parser.parse_args()
+
+    # Set default output filename based on input if not specified
+    if args.output is None:
+        base_name = args.input.replace('.json', '')
+        args.output = f'{base_name}_refined.json'
+
     print("=" * 70)
     print("AUDIOBOOK SEARCH RESULTS REFINEMENT")
     print("=" * 70)
@@ -222,10 +261,10 @@ def main():
     print("=" * 70)
 
     # Refine the results
-    refined = refine_results()
+    refined = refine_results(args.input, args.limit)
 
-    # Save refined results
-    save_refined_results(refined)
+    # Save refined results (pass output filename)
+    save_refined_results(refined, args.output)
 
     # Print refined results
     print_refined_results(refined)

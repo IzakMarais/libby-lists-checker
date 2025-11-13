@@ -1,21 +1,74 @@
 # Library Audiobook Availability Checker
 
-Check which audiobooks from the Western Cape Provincial Library are currently available to borrow.
+Check which audiobooks from the Western Cape Provincial Library are currently available to borrow. Supports finding audiobooks from multiple sources:
+
+- **BBC World Book Club** podcast episodes
+- **Hugo Award for Best Novel** nominees and winners
 
 ## Quick Start
 
 ```bash
-# Check a single book
+# Complete workflow for Hugo Award authors
+python workflow.py --source hugo
+
+# Complete workflow for both BBC and Hugo authors
+python workflow.py --source both
+
+# Or check individual books/authors:
 python check_single_book.py 8919230
-
-# Check all books by an author
 python check_by_author.py "Agatha Christie"
-
-# Check all books (creates available_audiobooks.json)
-python check_availability.py
 ```
 
 ## Scripts
+
+### Automated Workflow
+
+**`workflow.py`** - Complete end-to-end workflow
+
+```bash
+# Hugo Award authors only
+python workflow.py --source hugo
+
+# BBC World Book Club only
+python workflow.py --source bbc
+
+# Both sources (default)
+python workflow.py --source both
+
+# Run specific stages only
+python workflow.py --stages scrape search
+
+# Skip scraping (use existing data)
+python workflow.py --skip-scrape
+```
+
+### Data Collection
+
+**`scrape_hugo_awards.py`** - Scrape Hugo Award nominees from Wikipedia
+
+```bash
+python scrape_hugo_awards.py
+# Creates: data/hugo_award_nominees.json, data/hugo_award_authors.json
+```
+
+**`scrape_episodes.py`** - Scrape BBC World Book Club episodes
+
+```bash
+python scrape_episodes.py
+# Creates: data/bbc_world_book_club_episodes.json
+```
+
+**`search_combined.py`** - Search library for audiobooks by authors
+
+```bash
+# Search Hugo authors
+python search_combined.py --source hugo
+
+# Search both sources
+python search_combined.py --source both --delay 2.0
+```
+
+### Availability Checking
 
 **`check_single_book.py`** - Test one book by ID
 
@@ -52,43 +105,96 @@ Results are saved to `data/available_audiobooks.json` with borrowing URLs.
 
 ## Full Workflow
 
-These scripts work with your existing BBC World Book Club workflow:
+The complete pipeline works with multiple data sources:
+
+### Option 1: Automated Workflow (Recommended)
+
+```bash
+# Run everything for Hugo Award authors
+python workflow.py --source hugo
+
+# Run everything for both sources
+python workflow.py --source both
+```
+
+### Option 2: Manual Step-by-Step
+
+**For Hugo Award Authors:**
+
+```bash
+# 1. Scrape Hugo Award nominees from Wikipedia
+python scrape_hugo_awards.py
+# Creates: data/hugo_award_nominees.json, data/hugo_award_authors.json
+
+# 2. Search for audiobooks in the library
+python search_combined.py --source hugo
+# Creates: data/hugo_audiobook_search_results.json
+
+# 3. Refine the search results (filter by author matching)
+python refine_audiobooks.py --input data/hugo_audiobook_search_results.json
+# Creates: data/hugo_audiobook_search_results_refined.json
+
+# 4. Check which books are currently available
+python check_availability.py --input data/hugo_audiobook_search_results_refined.json
+# Creates: data/hugo_available_audiobooks.json
+```
+
+**For BBC World Book Club:**
 
 ```bash
 # 1. Scrape BBC World Book Club episodes
 python scrape_episodes.py
-# Creates: data/bbc_world_book_club_episodes.json, data/bbc_world_book_club_episodes.csv
+# Creates: data/bbc_world_book_club_episodes.json
 
 # 2. Search for audiobooks in the library
-python search_audiobooks.py
-# Creates: data/audiobook_search_results.json, data/audiobook_search_results.csv
+python search_combined.py --source bbc
+# Creates: data/bbc_audiobook_search_results.json
 
 # 3. Refine the search results
-python refine_audiobooks.py
-# Creates: data/audiobook_search_results_refined.json, data/audiobook_search_results_refined.csv
+python refine_audiobooks.py --input data/bbc_audiobook_search_results.json
+# Creates: data/bbc_audiobook_search_results_refined.json
 
 # 4. Check which books are currently available
-python check_availability.py
-# Creates: data/available_audiobooks.json
+python check_availability.py --input data/bbc_audiobook_search_results_refined.json
+# Creates: data/bbc_available_audiobooks.json
 ```
 
 ## Project Structure
 
 ```
 .
+├── workflow.py                # Complete automated workflow
+├── scrape_hugo_awards.py      # Scrape Hugo Award nominees (NEW)
+├── scrape_episodes.py         # Scrape BBC World Book Club episodes
+├── search_combined.py         # Search library for multiple sources (NEW)
+├── search_audiobooks.py       # Core search library (used by search_combined.py)
+├── refine_audiobooks.py       # Filter search results
 ├── check_availability.py      # Check availability of all books
 ├── check_by_author.py         # Check availability for one author
 ├── check_single_book.py       # Check availability for one book
-├── scrape_episodes.py         # Scrape BBC World Book Club episodes
-├── search_audiobooks.py       # Search library for audiobooks
-├── refine_audiobooks.py       # Filter search results
 ├── requirements.in            # Python dependencies
 └── data/                      # All data files (CSV, JSON, etc.)
-    ├── bbc_world_book_club_episodes.json
-    ├── bbc_world_book_club_episodes.csv
-    ├── audiobook_search_results.json
-    ├── audiobook_search_results.csv
+    ├── hugo_award_nominees.json           # Hugo nominees & winners (NEW)
+    ├── hugo_award_authors.json            # Unique Hugo authors (NEW)
+    ├── hugo_audiobook_search_results.json # Hugo search results (NEW)
+    ├── bbc_world_book_club_episodes.json  # BBC episodes
+    ├── bbc_audiobook_search_results.json  # BBC search results (NEW)
     ├── audiobook_search_results_refined.json
-    ├── audiobook_search_results_refined.csv
     └── available_audiobooks.json
 ```
+
+## Data Sources
+
+### Hugo Award for Best Novel
+
+- **Source**: [Wikipedia](https://en.wikipedia.org/wiki/Hugo_Award_for_Best_Novel)
+- **Coverage**: 1953-present (79 years)
+- **Content**: ~180 authors, winners and nominees
+- **Updated**: Manually run scraper to get latest nominees
+
+### BBC World Book Club
+
+- **Source**: [BBC Audio](https://www.bbc.com/audio/brand/p003jhsk)
+- **Coverage**: 130+ episodes
+- **Content**: Podcast discussions with authors
+- **Updated**: Manually run scraper for new episodes

@@ -8,6 +8,7 @@ import json
 import csv
 from datetime import datetime
 import time
+import argparse
 
 def scrape_page(page_num):
     """
@@ -138,11 +139,36 @@ def save_to_csv(episodes, filename='data/bbc_world_book_club_episodes.csv'):
 
 
 def main():
+    parser = argparse.ArgumentParser(
+        description='Scrape BBC World Book Club episodes'
+    )
+    
+    parser.add_argument(
+        '--limit',
+        type=int,
+        default=None,
+        help='Limit number of episodes to scrape (default: scrape all)'
+    )
+    
+    parser.add_argument(
+        '--pages',
+        type=int,
+        default=13,
+        help='Number of pages to scrape (default: 13, i.e., pages 0-13)'
+    )
+    
+    args = parser.parse_args()
+    
     print("Starting to scrape BBC World Book Club episodes...")
     print("=" * 60)
 
-    # Scrape all pages (0 to 13)
-    episodes = scrape_all_episodes(0, 13)
+    # Scrape all pages (0 to end_page)
+    episodes = scrape_all_episodes(0, args.pages)
+    
+    # Apply limit if specified
+    if args.limit:
+        episodes = episodes[:args.limit]
+        print(f"\nLimited to {len(episodes)} episodes")
 
     print("\n" + "=" * 60)
     print(f"Total episodes scraped: {len(episodes)}")
