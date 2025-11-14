@@ -4,6 +4,7 @@ Check which audiobooks from the Western Cape Provincial Library are currently av
 
 - **BBC World Book Club** podcast episodes
 - **Hugo Award for Best Novel** nominees and winners
+- **Booker Prize** winners, shortlists, and longlists
 
 ## Quick Start
 
@@ -11,8 +12,8 @@ Check which audiobooks from the Western Cape Provincial Library are currently av
 # Complete workflow for Hugo Award authors
 python workflow.py --source hugo
 
-# Complete workflow for both BBC and Hugo authors
-python workflow.py --source both
+# Complete workflow for all sources (BBC, Hugo, and Booker)
+python workflow.py --source all
 
 # Or check individual books/authors:
 python check_single_book.py 8919230
@@ -32,8 +33,11 @@ python workflow.py --source hugo
 # BBC World Book Club only
 python workflow.py --source bbc
 
-# Both sources (default)
-python workflow.py --source both
+# Booker Prize only
+python workflow.py --source booker
+
+# All sources (default)
+python workflow.py --source all
 
 # Run specific stages only
 python workflow.py --stages scrape search
@@ -51,6 +55,13 @@ python scrape_hugo_awards.py
 # Creates: data/hugo_award_nominees.json, data/hugo_award_authors.json
 ```
 
+**`scrape_booker_prize.py`** - Scrape Booker Prize nominees from Wikipedia
+
+```bash
+python scrape_booker_prize.py
+# Creates: data/booker_prize_nominees.json, data/booker_prize_authors.json
+```
+
 **`scrape_episodes.py`** - Scrape BBC World Book Club episodes
 
 ```bash
@@ -64,8 +75,11 @@ python scrape_episodes.py
 # Search Hugo authors
 python search_combined.py --source hugo
 
-# Search both sources
-python search_combined.py --source both --delay 2.0
+# Search Booker Prize authors
+python search_combined.py --source booker
+
+# Search all sources
+python search_combined.py --source all --delay 2.0
 ```
 
 ### Availability Checking
@@ -113,8 +127,11 @@ The complete pipeline works with multiple data sources:
 # Run everything for Hugo Award authors
 python workflow.py --source hugo
 
-# Run everything for both sources
-python workflow.py --source both
+# Run everything for Booker Prize authors
+python workflow.py --source booker
+
+# Run everything for all sources
+python workflow.py --source all
 ```
 
 ### Option 2: Manual Step-by-Step
@@ -137,6 +154,26 @@ python refine_audiobooks.py --input data/hugo_audiobook_search_results.json
 # 4. Check which books are currently available
 python check_availability.py --input data/hugo_audiobook_search_results_refined.json
 # Creates: data/hugo_available_audiobooks.json
+```
+
+**For Booker Prize Authors:**
+
+```bash
+# 1. Scrape Booker Prize nominees from Wikipedia
+python scrape_booker_prize.py
+# Creates: data/booker_prize_nominees.json, data/booker_prize_authors.json
+
+# 2. Search for audiobooks in the library
+python search_combined.py --source booker
+# Creates: data/booker_audiobook_search_results.json
+
+# 3. Refine the search results
+python refine_audiobooks.py --input data/booker_audiobook_search_results.json
+# Creates: data/booker_audiobook_search_results_refined.json
+
+# 4. Check which books are currently available
+python check_availability.py --input data/booker_audiobook_search_results_refined.json
+# Creates: data/booker_available_audiobooks.json
 ```
 
 **For BBC World Book Club:**
@@ -164,9 +201,10 @@ python check_availability.py --input data/bbc_audiobook_search_results_refined.j
 ```
 .
 ├── workflow.py                # Complete automated workflow
-├── scrape_hugo_awards.py      # Scrape Hugo Award nominees (NEW)
+├── scrape_hugo_awards.py      # Scrape Hugo Award nominees
+├── scrape_booker_prize.py     # Scrape Booker Prize nominees
 ├── scrape_episodes.py         # Scrape BBC World Book Club episodes
-├── search_combined.py         # Search library for multiple sources (NEW)
+├── search_combined.py         # Search library for multiple sources
 ├── search_audiobooks.py       # Core search library (used by search_combined.py)
 ├── refine_audiobooks.py       # Filter search results
 ├── check_availability.py      # Check availability of all books
@@ -174,11 +212,14 @@ python check_availability.py --input data/bbc_audiobook_search_results_refined.j
 ├── check_single_book.py       # Check availability for one book
 ├── requirements.in            # Python dependencies
 └── data/                      # All data files (CSV, JSON, etc.)
-    ├── hugo_award_nominees.json           # Hugo nominees & winners (NEW)
-    ├── hugo_award_authors.json            # Unique Hugo authors (NEW)
-    ├── hugo_audiobook_search_results.json # Hugo search results (NEW)
+    ├── hugo_award_nominees.json           # Hugo nominees & winners
+    ├── hugo_award_authors.json            # Unique Hugo authors
+    ├── hugo_audiobook_search_results.json # Hugo search results
+    ├── booker_prize_nominees.json         # Booker nominees & winners
+    ├── booker_prize_authors.json          # Unique Booker authors
+    ├── booker_audiobook_search_results.json # Booker search results
     ├── bbc_world_book_club_episodes.json  # BBC episodes
-    ├── bbc_audiobook_search_results.json  # BBC search results (NEW)
+    ├── bbc_audiobook_search_results.json  # BBC search results
     ├── audiobook_search_results_refined.json
     └── available_audiobooks.json
 ```
@@ -190,6 +231,13 @@ python check_availability.py --input data/bbc_audiobook_search_results_refined.j
 - **Source**: [Wikipedia](https://en.wikipedia.org/wiki/Hugo_Award_for_Best_Novel)
 - **Coverage**: 1953-present (79 years)
 - **Content**: ~180 authors, winners and nominees
+- **Updated**: Manually run scraper to get latest nominees
+
+### Booker Prize
+
+- **Source**: [Wikipedia](https://en.wikipedia.org/wiki/Booker_Prize)
+- **Coverage**: 1969-present (57+ years)
+- **Content**: Winners, shortlists, and longlists
 - **Updated**: Manually run scraper to get latest nominees
 
 ### BBC World Book Club
