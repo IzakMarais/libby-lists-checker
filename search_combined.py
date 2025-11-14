@@ -98,6 +98,16 @@ def load_booker_authors(filename='data/booker_prize_authors.json'):
     return load_authors_from_json(filename)
 
 
+def load_nobel_authors(filename='data/nobel_literature_authors.json'):
+    """
+    Load authors from Nobel Prize in Literature data.
+
+    Returns:
+        List of author names
+    """
+    return load_authors_from_json(filename)
+
+
 def search_authors(authors, output_file, delay=2.0, limit=None):
     """
     Search for audiobooks for a list of authors.
@@ -165,7 +175,7 @@ def main():
 
     parser.add_argument(
         '--source',
-        choices=['bbc', 'hugo', 'booker', 'all'],
+        choices=['bbc', 'hugo', 'booker', 'nobel', 'all'],
         default='all',
         help='Source of authors to search (default: all)'
     )
@@ -217,15 +227,23 @@ def main():
         authors.extend(booker_authors)
         print(f"  Loaded {len(booker_authors)} Booker Prize authors")
 
+    if args.source in ['nobel', 'all']:
+        print("Loading Nobel Prize in Literature authors...")
+        nobel_authors = load_nobel_authors()
+        authors.extend(nobel_authors)
+        print(f"  Loaded {len(nobel_authors)} Nobel Prize authors")
+
     if not authors:
         print("\nNo authors found. Please check your data files:")
         print("  - For BBC: data/bbc_world_book_club_episodes.json")
         print("  - For Hugo: data/hugo_award_authors.json")
         print("  - For Booker: data/booker_prize_authors.json")
+        print("  - For Nobel: data/nobel_literature_authors.json")
         print("\nRun the appropriate scraper first:")
         print("  - BBC: python scrape_episodes.py")
         print("  - Hugo: python scrape_hugo_awards.py")
         print("  - Booker: python scrape_booker_prize.py")
+        print("  - Nobel: python scrape_nobel_literature.py")
         return
 
     # Remove duplicates while preserving order

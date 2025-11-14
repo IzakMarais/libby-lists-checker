@@ -5,6 +5,7 @@ Check which audiobooks from the Western Cape Provincial Library are currently av
 - **BBC World Book Club** podcast episodes
 - **Hugo Award for Best Novel** nominees and winners
 - **Booker Prize** winners, shortlists, and longlists
+- **Nobel Prize in Literature** laureates
 
 ## Quick Start
 
@@ -12,7 +13,7 @@ Check which audiobooks from the Western Cape Provincial Library are currently av
 # Complete workflow for Hugo Award authors
 python workflow.py --source hugo
 
-# Complete workflow for all sources (BBC, Hugo, and Booker)
+# Complete workflow for all sources (BBC, Hugo, Booker, and Nobel)
 python workflow.py --source all
 
 # Or check individual books/authors:
@@ -35,6 +36,9 @@ python workflow.py --source bbc
 
 # Booker Prize only
 python workflow.py --source booker
+
+# Nobel Prize in Literature only
+python workflow.py --source nobel
 
 # All sources (default)
 python workflow.py --source all
@@ -62,6 +66,13 @@ python scrape_booker_prize.py
 # Creates: data/booker_prize_nominees.json, data/booker_prize_authors.json
 ```
 
+**`scrape_nobel_literature.py`** - Scrape Nobel Prize in Literature laureates from Wikipedia
+
+```bash
+python scrape_nobel_literature.py
+# Creates: data/nobel_literature_laureates.json, data/nobel_literature_authors.json
+```
+
 **`scrape_episodes.py`** - Scrape BBC World Book Club episodes
 
 ```bash
@@ -77,6 +88,9 @@ python search_combined.py --source hugo
 
 # Search Booker Prize authors
 python search_combined.py --source booker
+
+# Search Nobel Prize authors
+python search_combined.py --source nobel
 
 # Search all sources
 python search_combined.py --source all --delay 2.0

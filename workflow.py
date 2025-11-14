@@ -49,7 +49,7 @@ Examples:
 
     parser.add_argument(
         '--source',
-        choices=['bbc', 'hugo', 'booker', 'all'],
+        choices=['bbc', 'hugo', 'booker', 'nobel', 'all'],
         default='all',
         help='Source of authors (default: all)'
     )
@@ -122,6 +122,13 @@ Examples:
             if args.limit:
                 cmd.extend(['--limit', str(args.limit)])
             if not run_command(cmd, "Scraping Booker Prize nominees"):
+                return 1
+
+        if args.source in ['nobel', 'all']:
+            cmd = [sys.executable, 'scrape_nobel_literature.py']
+            if args.limit:
+                cmd.extend(['--limit', str(args.limit)])
+            if not run_command(cmd, "Scraping Nobel Prize in Literature laureates"):
                 return 1
 
     # Stage 2: Search for audiobooks

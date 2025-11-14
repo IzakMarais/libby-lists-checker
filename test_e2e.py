@@ -17,7 +17,7 @@ def run_test(source, limit, delay=0.5):
     Run an end-to-end test for a specific source.
 
     Args:
-        source: 'bbc', 'hugo', or 'booker'
+        source: 'bbc', 'hugo', 'booker', or 'nobel'
         limit: Number of items to process
         delay: Delay between requests
 
@@ -64,13 +64,21 @@ def run_test(source, limit, delay=0.5):
             'data/hugo_audiobook_search_results_refined.json',
             'data/hugo_available_audiobooks.json'
         ]
-    else:  # booker
+    elif source == 'booker':
         files = [
             'data/booker_prize_nominees.json',
             'data/booker_prize_authors.json',
             'data/booker_audiobook_search_results.json',
             'data/booker_audiobook_search_results_refined.json',
             'data/booker_available_audiobooks.json'
+        ]
+    else:  # nobel
+        files = [
+            'data/nobel_literature_laureates.json',
+            'data/nobel_literature_authors.json',
+            'data/nobel_audiobook_search_results.json',
+            'data/nobel_audiobook_search_results_refined.json',
+            'data/nobel_available_audiobooks.json'
         ]
 
     for file_path in files:
@@ -98,6 +106,9 @@ Examples:
   # Test Booker workflow with 5 authors
   python test_e2e.py --source booker --limit 5
 
+  # Test Nobel workflow with 5 authors
+  python test_e2e.py --source nobel --limit 5
+
   # Test all workflows with 2 items each (quick smoke test)
   python test_e2e.py --source all --limit 2
 
@@ -108,7 +119,7 @@ Examples:
 
     parser.add_argument(
         '--source',
-        choices=['bbc', 'hugo', 'booker', 'all'],
+        choices=['bbc', 'hugo', 'booker', 'nobel', 'all'],
         default='all',
         help='Source to test (default: all)'
     )
@@ -150,6 +161,10 @@ Examples:
 
     if args.source in ['booker', 'all']:
         if not run_test('booker', args.limit, args.delay):
+            success = False
+
+    if args.source in ['nobel', 'all']:
+        if not run_test('nobel', args.limit, args.delay):
             success = False
 
     # Final summary
