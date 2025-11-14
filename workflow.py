@@ -49,9 +49,9 @@ Examples:
 
     parser.add_argument(
         '--source',
-        choices=['bbc', 'hugo', 'both'],
-        default='both',
-        help='Source of authors (default: both)'
+        choices=['bbc', 'hugo', 'booker', 'all'],
+        default='all',
+        help='Source of authors (default: all)'
     )
 
     parser.add_argument(
@@ -103,18 +103,25 @@ Examples:
 
     # Stage 1: Scrape data
     if 'scrape' in stages:
-        if args.source in ['bbc', 'both']:
+        if args.source in ['bbc', 'all']:
             cmd = [sys.executable, 'scrape_episodes.py']
             if args.limit:
                 cmd.extend(['--limit', str(args.limit)])
             if not run_command(cmd, "Scraping BBC World Book Club episodes"):
                 return 1
 
-        if args.source in ['hugo', 'both']:
+        if args.source in ['hugo', 'all']:
             cmd = [sys.executable, 'scrape_hugo_awards.py']
             if args.limit:
                 cmd.extend(['--limit', str(args.limit)])
             if not run_command(cmd, "Scraping Hugo Award nominees"):
+                return 1
+
+        if args.source in ['booker', 'all']:
+            cmd = [sys.executable, 'scrape_booker_prize.py']
+            if args.limit:
+                cmd.extend(['--limit', str(args.limit)])
+            if not run_command(cmd, "Scraping Booker Prize nominees"):
                 return 1
 
     # Stage 2: Search for audiobooks
@@ -163,13 +170,17 @@ Examples:
     print("=" * 60)
     print("\nOutput files:")
 
-    if args.source in ['bbc', 'both']:
+    if args.source in ['bbc', 'all']:
         print(f"  BBC Episodes: data/bbc_world_book_club_episodes.json")
         print(f"  BBC Authors: data/bbc_world_book_club_authors.json")
 
-    if args.source in ['hugo', 'both']:
+    if args.source in ['hugo', 'all']:
         print(f"  Hugo Nominees: data/hugo_award_nominees.json")
         print(f"  Hugo Authors: data/hugo_award_authors.json")
+
+    if args.source in ['booker', 'all']:
+        print(f"  Booker Nominees: data/booker_prize_nominees.json")
+        print(f"  Booker Authors: data/booker_prize_authors.json")
 
     print(f"  Search Results: data/{args.source}_audiobook_search_results.json")
 

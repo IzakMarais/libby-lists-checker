@@ -6,6 +6,7 @@ This project automates the process of finding and checking availability of audio
 
 1. **BBC World Book Club** - Audiobooks from the podcast's featured books
 2. **Hugo Award for Best Novel** - Audiobooks from Hugo Award nominees and winners (1953-present)
+3. **Booker Prize** - Audiobooks from Booker Prize winners, shortlists, and longlists (1969-present)
 
 ## Purpose
 
@@ -14,7 +15,7 @@ This tool helps audiobook enthusiasts:
 1. Discover which books from prestigious sources are available as audiobooks in their local library
 2. Track availability status (available now vs. on loan)
 3. Get direct borrowing URLs for available titles
-4. Explore award-winning science fiction and fantasy literature
+4. Explore award-winning science fiction, fantasy, and literary fiction
 
 ## Architecture & Workflow
 
@@ -26,59 +27,31 @@ Stage 1: Scrape Data → Stage 2: Search Library → Stage 3: Refine Results →
 
 ### Data Sources
 
-**Source 1: BBC World Book Club** (Original)
+The project supports three prestigious literary sources:
 
-- Scrapes episode metadata from BBC website
-- ~130+ episodes featuring author discussions
-
-**Source 2: Hugo Award for Best Novel** (New)
-
-- Scrapes nominees and winners from Wikipedia
-- 79 years of awards (1953-present)
-- ~180 unique authors
-- Both winners and finalists included
+| Source                        | Content                                | Scale                                         | Script                   |
+| ----------------------------- | -------------------------------------- | --------------------------------------------- | ------------------------ |
+| **BBC World Book Club**       | Episode metadata from BBC podcast      | ~130+ episodes                                | `scrape_episodes.py`     |
+| **Hugo Award for Best Novel** | Wikipedia nominees/winners             | 79 years (1953-present), ~180 authors         | `scrape_hugo_awards.py`  |
+| **Booker Prize**              | Wikipedia winners/shortlists/longlists | 57+ years (1969-present), hundreds of authors | `scrape_booker_prize.py` |
 
 ### Stage 1: Data Collection
 
-**Script:** `scrape_episodes.py` (BBC)
+**Common Pattern:** All scrapers extract author names, book titles, and metadata, then generate:
 
-Scrapes the BBC World Book Club website to extract:
+- A detailed entries file (episodes/nominees) with full metadata
+- A deduplicated authors list for library searching
+- Both JSON and CSV formats
 
-- Episode metadata (ID, author, book title, date, duration)
-- Direct episode URLs
-- Processes all pages of the podcast archive
-- Parses episode titles to extract author and book title fields
-- Generates a separate authors list for searching
+**Source-Specific Features:**
 
-**Output:**
+- **BBC**: Parses episode titles to extract author/book, includes URLs and duration
+- **Hugo/Booker**: Handles co-authors (extracts primary), parses Wikipedia tables, tracks winner/nominee status
 
-- `data/bbc_world_book_club_episodes.json`
-- `data/bbc_world_book_club_episodes.csv`
-- `data/bbc_world_book_club_authors.json`
-- `data/bbc_world_book_club_authors.csv`
+**Output Pattern:** `data/{source}_{type}.{json|csv}`
 
-**Script:** `scrape_hugo_awards.py` (Hugo - NEW)
-
-Scrapes Wikipedia's Hugo Award for Best Novel page to extract:
-
-- Author names
-- Book titles
-- Winner/nominee status
-- Year of nomination
-
-Features:
-
-- Handles co-authors (extracts primary author)
-- Deduplicates entries
-- Generates separate author list for searching
-- Parses complex Wikipedia table structures
-
-**Output:**
-
-- `data/hugo_award_nominees.json` (all nominations)
-- `data/hugo_award_nominees.csv`
-- `data/hugo_award_authors.json` (unique authors)
-- `data/hugo_award_authors.csv`
+- Entries: `{source}_episodes.json` (BBC) or `{source}_nominees.json` (Hugo/Booker)
+- Authors: `{source}_authors.json` (all sources)
 
 ### Stage 2: Library Search
 
@@ -86,9 +59,9 @@ Features:
 
 Universal search script supporting multiple data sources:
 
-- Loads authors from Hugo Award or BBC data
+- Loads authors from Hugo Award, Booker Prize, or BBC data
 - Searches library for each author using `search_audiobooks_for_author()`
-- Supports selective searching (hugo, bbc, or both)
+- Supports selective searching (hugo, booker, bbc, or all)
 - Configurable rate limiting
 - Unified output format for all sources
 
@@ -97,13 +70,14 @@ Universal search script supporting multiple data sources:
 ```bash
 python search_combined.py --source hugo
 python search_combined.py --source bbc
-python search_combined.py --source both --delay 2.0
+python search_combined.py --source booker
+python search_combined.py --source all --delay 2.0
 ```
 
 **Output:**
 
 - `data/{source}_audiobook_search_results.json`
-- e.g., `data/hugo_audiobook_search_results.json`, `data/bbc_audiobook_search_results.json`
+- e.g., `data/hugo_audiobook_search_results.json`, `data/bbc_audiobook_search_results.json`, `data/booker_audiobook_search_results.json`
 
 **Note:** `search_audiobooks.py` is now a library module providing the core `search_audiobooks_for_author()` function used by `search_combined.py`.
 
@@ -111,34 +85,17 @@ python search_combined.py --source both --delay 2.0
 
 **Script:** `refine_audiobooks.py`
 
-Filters and matches results intelligently:
+Filters and matches results intelligently using fuzzy name matching (85% similarity threshold) to handle author variations and remove false positives.
 
-- Uses fuzzy name matching to handle author name variations
-- Removes false positives (books by different authors)
-- Normalizes author names (handles punctuation, capitalization)
-- Applies similarity threshold (default 85%) for matching
-
-**Output:**
-
-- `data/audiobook_search_results_refined.json`
-- `data/audiobook_search_results_refined.csv`
-- `data/audiobook_search_results_refined.txt`
-- `data/audiobook_search_results_refined_changes.csv`
+**Output:** `data/{source}_audiobook_search_results_refined.{json|csv|txt}` plus changes log
 
 ### Stage 4: Availability Checking
 
 **Script:** `check_availability.py`
 
-Fetches real-time availability status:
+Fetches real-time availability status by scraping OverDrive pages for copy counts, descriptions, and borrowing URLs.
 
-- Scrapes each book's OverDrive page
-- Extracts available/owned copy counts
-- Retrieves book descriptions
-- Generates borrowing URLs
-
-**Output:**
-
-- `data/available_audiobooks.json` (with availability status)
+**Output:** `data/{source}_available_audiobooks.json`
 
 ## Utility Scripts
 
@@ -160,29 +117,30 @@ python workflow.py --stages scrape search
 # Skip scraping (use existing data)
 python workflow.py --skip-scrape
 
-# Run with limits for testing (NEW)
+# Run with limits for testing
 python workflow.py --source hugo --limit 5
 ```
 
 Features:
 
 - Orchestrates all 4 stages automatically
-- Source selection (bbc, hugo, both)
+- Source selection (bbc, hugo, booker, all)
 - Stage selection
 - Error handling and progress reporting
 - Configurable limits for testing/development
 
 ### Testing & Validation
 
-**`test_e2e.py`** (NEW)
+**`test_e2e.py`**
 End-to-end testing with configurable data limits:
 
 ```bash
-# Quick smoke test (both sources, 2 items each)
+# Quick smoke test (all sources, 2 items each)
 python test_e2e.py --limit 2
 
 # Test specific source
 python test_e2e.py --source hugo --limit 5
+python test_e2e.py --source booker --limit 5
 
 # Test with custom delay
 python test_e2e.py --limit 3 --delay 1.0
@@ -191,7 +149,7 @@ python test_e2e.py --limit 3 --delay 1.0
 Features:
 
 - Validates complete workflow with minimal data
-- Tests both BBC and Hugo sources
+- Tests BBC, Hugo, and Booker sources
 - Configurable item limits and delays
 - Progress reporting and file verification
 - Fast iteration during development
@@ -233,96 +191,67 @@ python check_by_author.py "Agatha Christie"
 ## Data Flow
 
 ```
-BBC Website
+Source Website (BBC/Wikipedia)
     ↓
-Episodes JSON/CSV (130+ episodes)
+Entries JSON/CSV (episodes/nominees with metadata)
+    ↓
+Authors JSON/CSV (deduplicated list)
     ↓
 OverDrive Search (per author)
     ↓
-Search Results JSON/CSV (~200-300 results)
+Search Results JSON/CSV ({source}_audiobook_search_results)
     ↓
 Refined Results (filtered by author match)
     ↓
 Availability Check (real-time status)
     ↓
-Available Audiobooks JSON (ready to borrow)
+Available Audiobooks JSON ({source}_available_audiobooks)
 ```
 
 ## Data Structures
 
-### Episode Data (BBC)
+### Stage 1: Source Entry Schemas
+
+**Pattern:** Each source has entries with `author`, `title` fields, plus source-specific metadata:
+
+- **BBC**: `id`, `url`, `original_title`, `date`, `duration`, `page`
+- **Hugo/Booker**: `year`, `won` (Hugo) or `status` (Booker: winner/shortlist/longlist)
+
+**Author Lists:** All sources produce simple string arrays of unique author names for Stage 2 searching.
+
+### Stage 2: Search Results Schema
+
+**Universal format** across all sources:
 
 ```json
 {
-  "id": "w3cswsss",
-  "url": "https://www.bbc.com/audio/play/w3cswsss",
-  "original_title": "Ngũgĩ wa Thiong'o - A Grain of Wheat",
-  "author": "Ngũgĩ wa Thiong'o",
-  "book_title": "A Grain of Wheat",
-  "date": "9 Mar 2019",
-  "duration": "48 mins",
-  "page": 0
-}
-```
-
-### BBC Author List
-
-```json
-[
-  "Agatha Christie",
-  "Ngũgĩ wa Thiong'o",
-  "Oyinkan Braithwaite",
-  ...
-]
-```
-
-### Hugo Award Entry
-
-```json
-{
-  "author": "N. K. Jemisin",
-  "title": "The Fifth Season",
-  "won": true,
-  "year": 2016
-}
-```
-
-### Hugo Author List
-
-```json
-[
-  "Alfred Bester",
-  "Isaac Asimov",
-  "N. K. Jemisin",
-  ...
-]
-```
-
-### Audiobook Search Result
-
-```json
-{
-  "searched_author": "Ngũgĩ wa Thiong'o",
+  "searched_author": "Author Name",
   "book_id": "8919230",
-  "title": "A Grain of Wheat",
-  "author": "Ngũgĩ wa Thiong'o",
+  "title": "Book Title",
+  "author": "Author Name",
   "cover_image": "https://...",
   "search_url": "https://westerncape.overdrive.com/search?..."
 }
 ```
 
-### Availability Result
+### Stage 3: Refined Results Schema
+
+Same as Stage 2, but filtered to remove non-matching authors. Output includes `.json`, `.csv`, `.txt`, and `_changes.csv`.
+
+### Stage 4: Availability Schema
+
+Extends Stage 3 with real-time availability:
 
 ```json
 {
   "book_id": "8919230",
-  "title": "A Grain of Wheat",
-  "author": "Ngũgĩ wa Thiong'o",
+  "title": "Book Title",
+  "author": "Author Name",
   "is_available": true,
   "available_copies": 1,
   "total_copies": 1,
   "borrow_url": "https://westerncape.overdrive.com/media/8919230",
-  "description": "Set in Kenya during the Mau Mau uprising..."
+  "description": "Book description..."
 }
 ```
 
@@ -349,7 +278,7 @@ Available Audiobooks JSON (ready to borrow)
 - Graceful degradation on parsing failures
 - Progress indicators for batch operations
 
-### Testing & Development Features (NEW)
+### Testing & Development Features
 
 - `--limit` parameter on all scripts for testing with small datasets
 - End-to-end test script for rapid validation
@@ -364,7 +293,7 @@ Available Audiobooks JSON (ready to borrow)
 
 ## Usage Examples
 
-### Quick Testing (NEW)
+### Quick Testing
 
 ```bash
 # Fast end-to-end test (2 items per source)
@@ -379,23 +308,17 @@ python test_e2e.py --source hugo --limit 5
 ### Full Workflow
 
 ```bash
-# Automated workflow for Hugo authors (recommended)
+# Automated workflow (recommended)
 python workflow.py --source hugo
+python workflow.py --source booker
+python workflow.py --source bbc
+python workflow.py --source all
 
-# Automated workflow for both sources
-python workflow.py --source both
-
-# Manual step-by-step (Hugo)
-python scrape_hugo_awards.py
-python search_combined.py --source hugo
-python refine_audiobooks.py --input data/hugo_audiobook_search_results.json
-python check_availability.py --input data/hugo_audiobook_search_results_refined.json
-
-# Manual step-by-step (BBC - original workflow)
-python scrape_episodes.py
-python search_combined.py --source bbc
-python refine_audiobooks.py --input data/bbc_audiobook_search_results.json
-python check_availability.py --input data/bbc_audiobook_search_results_refined.json
+# Manual step-by-step (replace {source} with: hugo, booker, or bbc)
+python scrape_{source}.py  # Use scrape_hugo_awards.py, scrape_booker_prize.py, or scrape_episodes.py
+python search_combined.py --source {source}
+python refine_audiobooks.py --input data/{source}_audiobook_search_results.json
+python check_availability.py --input data/{source}_audiobook_search_results_refined.json
 ```
 
 ### Quick Checks
@@ -404,7 +327,7 @@ python check_availability.py --input data/bbc_audiobook_search_results_refined.j
 # Check one specific book
 python check_single_book.py 8919230
 
-# Check all Agatha Christie audiobooks
+# Check all books by an author
 python check_by_author.py "Agatha Christie"
 
 # Check with custom delay and output
@@ -416,10 +339,11 @@ python check_availability.py --delay 1.0 --output my_results.json
 ```
 libby-world-book-club/
 ├── workflow.py                 # Complete automated workflow
-├── test_e2e.py                 # NEW: End-to-end testing
-├── scrape_hugo_awards.py       # Stage 1 Hugo scraper (with --limit)
+├── test_e2e.py                 # End-to-end testing
+├── scrape_hugo_awards.py       # Stage 1: Hugo scraper (with --limit)
+├── scrape_booker_prize.py      # Stage 1: Booker scraper (with --limit)
 ├── scrape_episodes.py          # Stage 1: BBC scraper (with --limit, includes author extraction)
-├── search_combined.py          # Stage 2 multi-source search (with --limit)
+├── search_combined.py          # Stage 2: Multi-source search (with --limit)
 ├── search_audiobooks.py        # Library: Core search function
 ├── refine_audiobooks.py        # Stage 3: Result filtering (with --limit)
 ├── check_availability.py       # Stage 4: Real-time status (with --limit)
@@ -428,7 +352,7 @@ libby-world-book-club/
 ├── debug_search.py             # Utility: HTML debugging
 ├── requirements.in             # Python dependencies
 ├── README.md                   # User documentation
-├── TESTING.md                  # NEW: Testing guide
+├── TESTING.md                  # Testing guide
 ├── agents.md                   # This file (technical overview)
 └── data/                       # All generated data files
     ├── hugo_award_nominees.json            # Hugo entries
@@ -436,6 +360,11 @@ libby-world-book-club/
     ├── hugo_award_authors.json             # Unique authors
     ├── hugo_award_authors.csv
     ├── hugo_audiobook_search_results.json  # Hugo search
+    ├── booker_prize_nominees.json          # Booker entries
+    ├── booker_prize_nominees.csv
+    ├── booker_prize_authors.json           # Unique authors
+    ├── booker_prize_authors.csv
+    ├── booker_audiobook_search_results.json # Booker search
     ├── bbc_world_book_club_episodes.json   # BBC episodes with parsed authors
     ├── bbc_world_book_club_episodes.csv
     ├── bbc_world_book_club_authors.json    # BBC unique authors
@@ -447,65 +376,3 @@ libby-world-book-club/
     ├── audiobook_search_results_refined_changes.csv
     └── available_audiobooks.json
 ```
-
-## Development Notes
-
-### Web Scraping Approach
-
-- Uses BeautifulSoup for HTML parsing
-- Employs regex for extracting embedded JavaScript data
-- Sets appropriate User-Agent headers to avoid blocking
-- Respects rate limits with configurable delays
-
-### Author Matching Algorithm
-
-1. Normalize both names (lowercase, remove punctuation)
-2. Check exact match
-3. Check substring containment
-4. Calculate similarity ratio with SequenceMatcher
-5. Apply threshold (default 0.85)
-
-### Future Enhancements
-
-- Add scheduling/automation for regular checks
-- Email/notification system for newly available books
-- Support for multiple library systems
-- Wishlist functionality
-- Integration with Libby app API
-
-## Target Audience
-
-This tool is designed for:
-
-- BBC World Book Club listeners
-- Western Cape library patrons
-- Audiobook enthusiasts
-- Anyone wanting to automate library availability checking
-
-## License & Usage
-
-This is a personal utility project for educational and individual use. When using this tool:
-
-- Respect website terms of service
-- Use appropriate rate limiting
-- Don't overwhelm servers with requests
-- Consider caching results to minimize repeated scraping
-
-## Maintenance
-
-The scripts may need updates if:
-
-- BBC World Book Club website structure changes
-- OverDrive/Libby website HTML changes
-- Search result parsing breaks
-- New authentication requirements are added
-
-## Statistics
-
-- **130+ Episodes**: BBC World Book Club archive
-- **180+ Authors**: Hugo Award nominees and winners (1953-present)
-- **79 Years**: Hugo Award history
-- **Multiple Authors**: From contemporary to classic literature
-- **OverDrive Collection**: Western Cape Provincial Library system
-- **Pipeline Stages**: 4 main stages + 3 utility scripts
-- **Data Formats**: JSON, CSV, TXT outputs

@@ -17,7 +17,7 @@ def run_test(source, limit, delay=0.5):
     Run an end-to-end test for a specific source.
 
     Args:
-        source: 'bbc' or 'hugo'
+        source: 'bbc', 'hugo', or 'booker'
         limit: Number of items to process
         delay: Delay between requests
 
@@ -56,13 +56,21 @@ def run_test(source, limit, delay=0.5):
             'data/bbc_audiobook_search_results_refined.json',
             'data/bbc_available_audiobooks.json'
         ]
-    else:  # hugo
+    elif source == 'hugo':
         files = [
             'data/hugo_award_nominees.json',
             'data/hugo_award_authors.json',
             'data/hugo_audiobook_search_results.json',
             'data/hugo_audiobook_search_results_refined.json',
             'data/hugo_available_audiobooks.json'
+        ]
+    else:  # booker
+        files = [
+            'data/booker_prize_nominees.json',
+            'data/booker_prize_authors.json',
+            'data/booker_audiobook_search_results.json',
+            'data/booker_audiobook_search_results_refined.json',
+            'data/booker_available_audiobooks.json'
         ]
 
     for file_path in files:
@@ -87,8 +95,11 @@ Examples:
   # Test Hugo workflow with 5 authors
   python test_e2e.py --source hugo --limit 5
 
-  # Test both workflows with 2 items each (quick smoke test)
-  python test_e2e.py --source both --limit 2
+  # Test Booker workflow with 5 authors
+  python test_e2e.py --source booker --limit 5
+
+  # Test all workflows with 2 items each (quick smoke test)
+  python test_e2e.py --source all --limit 2
 
   # Test with faster delays (less respectful to servers)
   python test_e2e.py --source hugo --limit 3 --delay 0.3
@@ -97,9 +108,9 @@ Examples:
 
     parser.add_argument(
         '--source',
-        choices=['bbc', 'hugo', 'both'],
-        default='both',
-        help='Source to test (default: both)'
+        choices=['bbc', 'hugo', 'booker', 'all'],
+        default='all',
+        help='Source to test (default: all)'
     )
 
     parser.add_argument(
@@ -129,12 +140,16 @@ Examples:
 
     success = True
 
-    if args.source in ['bbc', 'both']:
+    if args.source in ['bbc', 'all']:
         if not run_test('bbc', args.limit, args.delay):
             success = False
 
-    if args.source in ['hugo', 'both']:
+    if args.source in ['hugo', 'all']:
         if not run_test('hugo', args.limit, args.delay):
+            success = False
+
+    if args.source in ['booker', 'all']:
+        if not run_test('booker', args.limit, args.delay):
             success = False
 
     # Final summary

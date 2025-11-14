@@ -88,6 +88,16 @@ def load_hugo_authors(filename='data/hugo_award_authors.json'):
     return load_authors_from_json(filename)
 
 
+def load_booker_authors(filename='data/booker_prize_authors.json'):
+    """
+    Load authors from Booker Prize data.
+
+    Returns:
+        List of author names
+    """
+    return load_authors_from_json(filename)
+
+
 def search_authors(authors, output_file, delay=2.0, limit=None):
     """
     Search for audiobooks for a list of authors.
@@ -155,9 +165,9 @@ def main():
 
     parser.add_argument(
         '--source',
-        choices=['bbc', 'hugo', 'both'],
-        default='both',
-        help='Source of authors to search (default: both)'
+        choices=['bbc', 'hugo', 'booker', 'all'],
+        default='all',
+        help='Source of authors to search (default: all)'
     )
 
     parser.add_argument(
@@ -189,25 +199,33 @@ def main():
     # Load authors based on source
     authors = []
 
-    if args.source in ['bbc', 'both']:
+    if args.source in ['bbc', 'all']:
         print("Loading BBC World Book Club authors...")
         bbc_authors = load_bbc_authors()
         authors.extend(bbc_authors)
         print(f"  Loaded {len(bbc_authors)} BBC authors")
 
-    if args.source in ['hugo', 'both']:
+    if args.source in ['hugo', 'all']:
         print("Loading Hugo Award authors...")
         hugo_authors = load_hugo_authors()
         authors.extend(hugo_authors)
         print(f"  Loaded {len(hugo_authors)} Hugo authors")
 
+    if args.source in ['booker', 'all']:
+        print("Loading Booker Prize authors...")
+        booker_authors = load_booker_authors()
+        authors.extend(booker_authors)
+        print(f"  Loaded {len(booker_authors)} Booker Prize authors")
+
     if not authors:
         print("\nNo authors found. Please check your data files:")
         print("  - For BBC: data/bbc_world_book_club_episodes.json")
         print("  - For Hugo: data/hugo_award_authors.json")
+        print("  - For Booker: data/booker_prize_authors.json")
         print("\nRun the appropriate scraper first:")
         print("  - BBC: python scrape_episodes.py")
         print("  - Hugo: python scrape_hugo_awards.py")
+        print("  - Booker: python scrape_booker_prize.py")
         return
 
     # Remove duplicates while preserving order
